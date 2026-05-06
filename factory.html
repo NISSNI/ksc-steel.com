@@ -16,6 +16,11 @@
       <span class="nav-logo-sub">金属材料专家</span>
     </div>
   </a>
+  <button class="nav-toggle" type="button" aria-label="切换导航" aria-expanded="false">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
   <ul class="nav-links">
     <li><a href="index.html" data-i18n="nav" data-i18n-key="home">首页</a></li>
     <li><a href="about.html" data-i18n="nav" data-i18n-key="about">关于我们</a></li>
@@ -37,6 +42,7 @@
 <div class="page-header" style="background:url('images/factory-overview.jpeg') center/cover">
   <div class="page-header-overlay"></div>
   <div class="page-header-content">
+    <span class="section-kicker light">Factory Network</span>
     <h1 data-i18n="sec" data-i18n-key="fac_h">五大生产基地</h1>
     <p data-i18n="sec" data-i18n-key="fac_p">覆盖中国、越南、泰国，加工产能领先</p>
   </div>
@@ -45,26 +51,14 @@
 <!-- PROCESS OVERVIEW -->
 <section class="section alt-bg">
   <div class="section-title">
-    <h2>加工业务介绍 Processing Introduction</h2>
-    <p>四大核心加工能力</p>
+    <h2 data-i18n="factoryPage" data-i18n-key="process_title">加工业务介绍 Processing Introduction</h2>
+    <p data-i18n="factoryPage" data-i18n-key="process_desc">四大核心加工能力</p>
   </div>
-  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:20px;max-width:1000px;margin:0 auto;text-align:center">
-    <div style="background:white;border-radius:16px;padding:28px;box-shadow:0 4px 20px rgba(0,0,0,0.07)">
-      <div style="font-size:40px;margin-bottom:12px">✂️</div>
-      <h3 style="font-size:15px;font-weight:800;color:var(--primary)">分条/纵剪 Slitting</h3>
-    </div>
-    <div style="background:white;border-radius:16px;padding:28px;box-shadow:0 4px 20px rgba(0,0,0,0.07)">
-      <div style="font-size:40px;margin-bottom:12px">📏</div>
-      <h3 style="font-size:15px;font-weight:800;color:var(--primary)">剪板/横切 Shearing</h3>
-    </div>
-    <div style="background:white;border-radius:16px;padding:28px;box-shadow:0 4px 20px rgba(0,0,0,0.07)">
-      <div style="font-size:40px;margin-bottom:12px">⚙️</div>
-      <h3 style="font-size:15px;font-weight:800;color:var(--primary)">压延/冷轧 Cold-Rolling</h3>
-    </div>
-    <div style="background:white;border-radius:16px;padding:28px;box-shadow:0 4px 20px rgba(0,0,0,0.07)">
-      <div style="font-size:40px;margin-bottom:12px">🔥</div>
-      <h3 style="font-size:15px;font-weight:800;color:var(--primary)">退火/球化退火 Annealing</h3>
-    </div>
+  <div class="mini-card-grid">
+    <div class="mini-card reveal"><div class="mini-card-flag">01</div><h3 data-i18n="factoryPage" data-i18n-key="process1">分条 / 纵剪</h3><p>Slitting</p></div>
+    <div class="mini-card reveal"><div class="mini-card-flag">02</div><h3 data-i18n="factoryPage" data-i18n-key="process2">剪板 / 横切</h3><p>Shearing</p></div>
+    <div class="mini-card reveal"><div class="mini-card-flag">03</div><h3 data-i18n="factoryPage" data-i18n-key="process3">压延 / 冷轧</h3><p>Cold-Rolling</p></div>
+    <div class="mini-card reveal"><div class="mini-card-flag">04</div><h3 data-i18n="factoryPage" data-i18n-key="process4">退火 / 球化退火</h3><p>Annealing</p></div>
   </div>
 </section>
 
@@ -73,62 +67,62 @@
   <div class="factory-grid">
 
     <div class="factory-card">
-      <img src="images/factory-dongguan.jpeg" class="factory-card-img" alt="Dongguan">
+      <img src="images/factory-dongguan.png" class="factory-card-img" alt="Dongguan">
       <div class="factory-card-body">
         <h3 data-i18n="fac" data-i18n-key="dg">东莞工厂</h3>
-        <div class="location">广东，中国 Dongguan, Guangdong</div>
+        <div class="location" data-i18n="factoryPage" data-i18n-key="loc_dg">广东，中国 Dongguan, Guangdong</div>
         <div class="capabilities">
-          <span class="cap-tag">分条 Slitting</span>
-          <span class="cap-tag">剪板 Shearing</span>
+          <span class="cap-tag" data-i18n="factoryPage" data-i18n-key="cap_slit">分条 Slitting</span>
+          <span class="cap-tag" data-i18n="factoryPage" data-i18n-key="cap_shear">剪板 Shearing</span>
         </div>
       </div>
     </div>
 
     <div class="factory-card">
-      <img src="images/factory-suzhou.jpeg" class="factory-card-img" alt="Suzhou">
+      <img src="images/factory-suzhou.png" class="factory-card-img" alt="Suzhou">
       <div class="factory-card-body">
         <h3 data-i18n="fac" data-i18n-key="sz">苏州工厂</h3>
-        <div class="location">江苏，中国 Suzhou, Jiangsu</div>
+        <div class="location" data-i18n="factoryPage" data-i18n-key="loc_sz">江苏，中国 Suzhou, Jiangsu</div>
         <div class="capabilities">
-          <span class="cap-tag">分条 Slitting</span>
-          <span class="cap-tag">剪板 Shearing</span>
+          <span class="cap-tag" data-i18n="factoryPage" data-i18n-key="cap_slit">分条 Slitting</span>
+          <span class="cap-tag" data-i18n="factoryPage" data-i18n-key="cap_shear">剪板 Shearing</span>
         </div>
       </div>
     </div>
 
     <div class="factory-card">
-      <img src="images/factory-xinyu.jpeg" class="factory-card-img" alt="Xinyu">
+      <img src="images/factory-xinyu.png" class="factory-card-img" alt="Xinyu">
       <div class="factory-card-body">
         <h3 data-i18n="fac" data-i18n-key="xy">新余工厂</h3>
-        <div class="location">江西，中国 Xinyu, Jiangxi</div>
+        <div class="location" data-i18n="factoryPage" data-i18n-key="loc_xy">江西，中国 Xinyu, Jiangxi</div>
         <div class="capabilities">
-          <span class="cap-tag">冷轧 Cold-Rolling</span>
-          <span class="cap-tag">退火 Annealing</span>
-          <span class="cap-tag">分条 Slitting</span>
+          <span class="cap-tag" data-i18n="factoryPage" data-i18n-key="cap_roll">冷轧 Cold-Rolling</span>
+          <span class="cap-tag" data-i18n="factoryPage" data-i18n-key="cap_anneal">退火 Annealing</span>
+          <span class="cap-tag" data-i18n="factoryPage" data-i18n-key="cap_slit">分条 Slitting</span>
         </div>
       </div>
     </div>
 
     <div class="factory-card">
-      <img src="images/factory-vietnam.jpeg" class="factory-card-img" alt="Vietnam">
+      <img src="images/factory-vietnam.png" class="factory-card-img" alt="Vietnam">
       <div class="factory-card-body">
         <h3 data-i18n="fac" data-i18n-key="vn">越南海防工厂</h3>
-        <div class="location">越南 Haiphong, Vietnam</div>
+        <div class="location" data-i18n="factoryPage" data-i18n-key="loc_vn">越南 Haiphong, Vietnam</div>
         <div class="capabilities">
-          <span class="cap-tag">分条 Slitting</span>
-          <span class="cap-tag">剪板 Shearing</span>
+          <span class="cap-tag" data-i18n="factoryPage" data-i18n-key="cap_slit">分条 Slitting</span>
+          <span class="cap-tag" data-i18n="factoryPage" data-i18n-key="cap_shear">剪板 Shearing</span>
         </div>
       </div>
     </div>
 
     <div class="factory-card">
-      <img src="images/factory-thailand.jpeg" class="factory-card-img" alt="Thailand">
+      <img src="images/factory-thailand.png" class="factory-card-img" alt="Thailand">
       <div class="factory-card-body">
         <h3 data-i18n="fac" data-i18n-key="th">泰国春武里工厂</h3>
-        <div class="location">泰国 Chon Buri, Thailand</div>
+        <div class="location" data-i18n="factoryPage" data-i18n-key="loc_th">泰国 Chon Buri, Thailand</div>
         <div class="capabilities">
-          <span class="cap-tag">分条 Slitting</span>
-          <span class="cap-tag">剪板 Shearing</span>
+          <span class="cap-tag" data-i18n="factoryPage" data-i18n-key="cap_slit">分条 Slitting</span>
+          <span class="cap-tag" data-i18n="factoryPage" data-i18n-key="cap_shear">剪板 Shearing</span>
         </div>
       </div>
     </div>
@@ -142,6 +136,6 @@
   </div>
 </footer>
 
-<script src="app.js"></script>
+<script src="app.js?v=20260506d"></script>
 </body>
 </html>

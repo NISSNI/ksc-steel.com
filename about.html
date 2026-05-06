@@ -16,6 +16,11 @@
       <span class="nav-logo-sub">金属材料专家</span>
     </div>
   </a>
+  <button class="nav-toggle" type="button" aria-label="切换导航" aria-expanded="false">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
   <ul class="nav-links">
     <li><a href="index.html" data-i18n="nav" data-i18n-key="home">首页</a></li>
     <li><a href="about.html" class="active" data-i18n="nav" data-i18n-key="about">关于我们</a></li>
@@ -37,6 +42,7 @@
 <div class="page-header" style="background:url('images/factory-overview.jpeg') center/cover">
   <div class="page-header-overlay"></div>
   <div class="page-header-content">
+    <span class="section-kicker light">About KSC</span>
     <h1 data-i18n="sec" data-i18n-key="about_h">关于我们 About Us</h1>
     <p data-i18n="sec" data-i18n-key="about_p">高顺昌控股有限公司，25年深耕金属材料行业</p>
   </div>
@@ -47,10 +53,13 @@
   <div class="section-title">
     <h2>集团简介 Group Profile</h2>
   </div>
-  <div style="max-width:1000px;margin:0 auto">
-    <div style="background:var(--gray-light);border-radius:20px;padding:40px;border-left:5px solid var(--accent)">
-      <h3 style="font-size:20px;font-weight:800;color:var(--primary);margin-bottom:16px">高顺昌控股有限公司<br><span style="font-size:14px;font-weight:400;color:var(--gray)">Kao Shun Cheong Holdings Co., Ltd.</span></h3>
-      <p style="font-size:15px;color:var(--text);line-height:1.9" data-i18n="about" data-i18n-key="p1">高顺昌控股有限公司（KSC）成立于2000年，总部位于香港，是一家专业从事特钢、矽钢片、铝材、不锈钢、铜材等金属材料贸易及加工服务的综合性企业。KSC在华南地区中高碳钢销量领先，深耕行业超过25年。旗下深圳/东莞、苏州、新余、越南、泰国五大生产基地覆盖中国、越南及泰国市场。</p>
+  <div class="info-panel reveal">
+    <h3>高顺昌控股有限公司<br><span>Kao Shun Cheong Holdings Co., Ltd.</span></h3>
+    <p data-i18n="about" data-i18n-key="p1">高顺昌控股有限公司（KSC）成立于2000年，总部位于香港，是一家专业从事特钢、矽钢片、铝材、不锈钢、铜材等金属材料贸易及加工服务的综合性企业。KSC在华南地区中高碳钢销量领先，深耕行业超过25年。旗下深圳/东莞、苏州、新余、越南、泰国五大生产基地覆盖中国、越南及泰国市场。</p>
+    <div class="metric-row">
+      <div class="metric-chip"><strong>25+</strong><span>年行业经验</span></div>
+      <div class="metric-chip"><strong>5</strong><span>生产基地</span></div>
+      <div class="metric-chip"><strong>100+</strong><span>合作客户</span></div>
     </div>
   </div>
 </section>
@@ -61,8 +70,8 @@
     <h2 data-i18n="sec" data-i18n-key="cust_h">一流客户 First-Rate Customers</h2>
     <p data-i18n="sec" data-i18n-key="cust_p">我们为众多世界500强企业提供产品与服务</p>
   </div>
-  <div style="text-align:center;max-width:900px;margin:0 auto">
-    <img src="images/customer-fullcontent.jpeg" alt="Customers" style="width:100%;border-radius:16px;border:2px solid #e5e7eb">
+  <div class="customer-frame reveal">
+    <img src="images/customer-fullcontent.jpeg" alt="Customers">
   </div>
 </section>
 
@@ -85,6 +94,6 @@
   </div>
 </footer>
 
-<script src="app.js"></script>
+<script src="app.js?v=20260506d"></script>
 </body>
 </html>
