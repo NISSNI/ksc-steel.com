@@ -4,11 +4,12 @@
 
 const L = {
   nav: {
-    home:      { zh:'首页',       en:'Home',       th:'หน้าแรก',        vi:'Trang chủ' },
-    about:     { zh:'关于我们',   en:'About',      th:'เกี่ยวกับเรา',   vi:'Về chúng tôi' },
-    products:  { zh:'产品中心',   en:'Products',   th:'ผลิตภัณฑ์',      vi:'Sản phẩm' },
-    factory:   { zh:'生产基地',   en:'Factory',    th:'โรงงาน',        vi:'Nhà máy' },
-    contact:   { zh:'联系我们',   en:'Contact',    th:'ติดต่อเรา',      vi:'Liên hệ' },
+    home:      { zh:'首页',         en:'Home',         th:'หน้าแรก',        vi:'Trang chủ' },
+    about:     { zh:'关于我们',     en:'About',        th:'เกี่ยวกับเรา',   vi:'Về chúng tôi' },
+    products:  { zh:'产品中心',     en:'Products',     th:'ผลิตภัณฑ์',      vi:'Sản phẩm' },
+    factory:   { zh:'生产基地',     en:'Factory',      th:'โรงงาน',        vi:'Nhà máy' },
+    materials: { zh:'材料及应用',   en:'Materials',    th:'วัสดุและการประยุกต์', vi:'Vat lieu' },
+    contact:   { zh:'联系我们',     en:'Contact',      th:'ติดต่อเรา',      vi:'Liên hệ' },
   },
   hero: {
     badge: { zh:'珠三角领先金属材料供应商', en:'Leading Metal Materials Supplier in PRD', th:'ผู้จัดหาวัสดุโลหะชั้นนำในเขตเจิ้งจู', vi:'Nha cung cap vat lieu kim loai hang dau vung Chinh Hai' },
@@ -228,6 +229,50 @@ const L = {
     h_thickness: { zh:'厚度', en:'Thickness', th:'ความหนา', vi:'Do day' },
     h_width: { zh:'宽度', en:'Width', th:'ความกว้าง', vi:'Chieu rong' },
     h_size: { zh:'成品尺寸', en:'Size', th:'ขนาดสำเร็จรูป', vi:'Kich thuoc thanh pham' }
+  },
+  materialsPage: {
+    // Page header
+    mat_h: { zh:'材料及应用', en:'Materials & Application', th:'วัสดุและการประยุกต์', vi:'Vat lieu va Ung dung' },
+    mat_p: { zh:'覆盖特钢、矽钢片、铝材、不锈钢、铜材全品类', en:'Full range of Special Steel, Silicon Steel, Aluminum, Stainless Steel & Copper', th:'ครอบคลุมเหล็กพิเศษ เหล็กซิลิคอน อะลูมิเนียม สแตนเลส และทองแวง', vi:'Day du: Thep dac biet, Thep silicon, Nhom, Thep khong gi va Dong' },
+    // Materials nav pills
+    pill_steel: { zh:'特钢', en:'Special Steel', th:'เหล็กพิเศษ', vi:'Thep dac biet' },
+    pill_alu: { zh:'铝材', en:'Aluminum', th:'อะลูมิเนียม', vi:'Nhom' },
+    pill_sil: { zh:'矽钢片', en:'Silicon Steel', th:'เหล็กซิลิคอน', vi:'Thep silicon' },
+    pill_ss: { zh:'不锈钢', en:'Stainless Steel', th:'สแตนเลส', vi:'Thep khong gi' },
+    pill_cu: { zh:'铜材', en:'Copper', th:'ทองแดง', vi:'Dong' },
+    pill_mills: { zh:'钢厂参考', en:'Steel Mills', th:'ผู้ผลิตเหล็ก', vi:'Hang thep' },
+    // Steel section
+    sec_steel_h: { zh:'特钢 / Special Steel', en:'Special Steel', th:'เหล็กพิเศษ', vi:'Thep dac biet' },
+    sec_steel_p: { zh:'广泛应用于汽车、机械、五金、精密零部件行业', en:'Widely used in automotive, machinery, hardware and precision component industries.', th:'ใช้อย่างแพร่หลายในอุตสาหกรรมยานยนต์ เครื่องจักร ฮาร์ดแวร์ และชิ้นส่วนความแม่นยำ', vi:'Ung dung rong rai trong nganh o to, may mac, kim khi va linh kien chinh xac.' },
+    // Aluminum section
+    sec_alu_h: { zh:'铝材 / Aluminum', en:'Aluminum', th:'อะลูมิเนียม', vi:'Nhom' },
+    sec_alu_p: { zh:'涵盖汽车轻量化、新能源电池、电子散热等高端应用', en:'Serving automotive lightweighting, EV batteries, electronics cooling and more.', th:'ครอบคลุมการลดน้ำหนักรถยนต์ แบตเตอรี่ EV และการระบายความร้อนอิเล็กทรอนิกส์', vi:'Phuc vu giam can o to, pin EV va tan nhiet dien tu.' },
+    // Silicon steel section
+    sec_sil_h: { zh:'矽钢片 / Silicon Steel', en:'Silicon Steel', th:'เหล็กซิลิคอน', vi:'Thep silicon' },
+    sec_sil_p: { zh:'无取向/取向矽钢片，应用于电机、变压器等电气设备', en:'Non-oriented and grain-oriented silicon steel for motors, transformers and electrical equipment.', th:'เหล็กซิลิคอนไม่กำหนดทิศและกำหนดทิศ สำหรับมอเตอร์ หม้อแปลง และอุปกรณ์ไฟฟ้า', vi:'Thep silicon vo huong va dinh huong cho dong co, may bien ap va thiet bi dien.' },
+    // Stainless steel section
+    sec_ss_h: { zh:'不锈钢 / Stainless Steel', en:'Stainless Steel', th:'สแตนเลส', vi:'Thep khong gi' },
+    sec_ss_p: { zh:'耐腐蚀、高强度，广泛用于汽车、电子、五金、食品设备等行业', en:'Corrosion-resistant and high-strength, widely used in automotive, electronics, hardware and food equipment.', th:'ทนการกัดกร่อนและแข็งแรง ใช้กว้างในอุตสาหกรรมยานยนต์ อิเล็กทรอนิกส์ ฮาร์ดแวร์ และอุปกรณ์อาหาร', vi:'Chong an mon va ben chiu, duoc dung rong trong nganh o to, dien tu, kim khi va thiet bi thuc pham.' },
+    // Copper section
+    sec_cu_h: { zh:'铜材 / Copper', en:'Copper', th:'ทองแดง', vi:'Dong' },
+    sec_cu_p: { zh:'带材、线材、管材，广泛用于电气与热交换应用', en:'Strip, wire and pipe, widely used in electrical and heat exchange applications.', th:'แถบ ลวด และท่อ ใช้กว้างในงานไฟฟ้าและแลกเปลี่ยนความร้อน', vi:'Bang, day, ong, dung rong trong ung dung dien va trao doi nhiet.' },
+    // Steel mills
+    sec_mills_h: { zh:'国内钢厂参考', en:'Steel Mill Reference', th:'ผู้ผลิตเหล็กในประเทศจีน', vi:'Tham chieu hang thep Trung Quoc' },
+    sec_mills_p: { zh:'常用钢厂简称对照，方便快速沟通与采购', en:'Common steel mill abbreviations for easy reference and procurement communication.', th:'ชื่อย่อผู้ผลิตเหล็กที่ใช้บ่อยสำหรับการสื่อสารและจัดซื้อ', vi:'Ten viet tat hang thep thong dung cho giao tiep va mua hang.' },
+    tab_gov: { zh:'国有大型钢企', en:'State-Owned Mills', th:'ผู้ผลิตเหล็กรัฐ', vi:'Hang thep nha nuoc' },
+    tab_pri: { zh:'民营钢企', en:'Private Mills', th:'ผู้ผลิตเหล็กเอกชน', vi:'Hang thep tu nhan' },
+    tab_spe: { zh:'特钢专业钢企', en:'Specialty Steel Mills', th:'ผู้ผลิตเหล็กเฉพาะทาง', vi:'Hang thep chuyen dau' },
+    // Table headers
+    th_grade: { zh:'牌号', en:'Grade', th:'เกรด', vi:'Mac' },
+    th_product: { zh:'产品形式', en:'Product Form', th:'รูปแบบผลิตภัณฑ์', vi:'Dang san pham' },
+    th_app: { zh:'主要应用', en:'Applications', th:'การใช้งานหลัก', vi:'Ung dung chinh' },
+    th_tip: { zh:'选型提示', en:'Selection Tips', th:'เคล็ดลับการเลือก', vi:'Meo chon' },
+    // CTA
+    cta_h: { zh:'需要专业材料咨询？', en:'Need Material Consulting?', th:'ต้องการปรึกษาวัสดุเฉพาะทาง?', vi:'Can tu van vat lieu chuyen nghiep?' },
+    cta_p: { zh:'KSC 销售工程师平均10年以上行业经验，可根据您的图纸快速推荐合适材料。', en:'KSC sales engineers average 10+ years experience, can recommend materials quickly based on your drawings.', th:'วิศวกรขาย KSC มีประสบการณ์เฉลี่ย 10+ ปี สามารถแนะนำวัสดุจากแบบร่างได้อย่างรวดเร็ว', vi:'Kỹ sư bán hàng KSC trung bình 10+ năm kinh nghiệm, có thể đề xuất vật liệu nhanh chóng từ bản vẽ.' },
+    cta_btn: { zh:'发送询价 →', en:'Send Inquiry →', th:'ส่งคำขอราคา →', vi:'Gui yeu cau bao gia →' },
+    // Footer
+    footer_copy: { zh:'© 2025 高顺昌控股有限公司 保留所有权利', en:'© 2025 Kao Shun Cheong Holdings Co., Ltd. All Rights Reserved', th:'© 2025 KSC สงวนลิขสิทธิ์', vi:'© 2025 KSC Bao luu moi quyen' }
   }
 };
 

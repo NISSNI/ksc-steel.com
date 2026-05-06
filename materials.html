@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>材料及应用_特钢_矽钢片_铝材_不锈钢_KSC | 中英泰越</title>
+  <meta name="description" content="KSC材料及应用详解：特钢、矽钢片、铝材、不锈钢、铜材在汽车冲压件、新能源电驱、电子散热等领域的应用，附国内钢厂简称对照（中英泰越四国语言）。">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- NAVBAR (SAME AS OTHER PAGES) -->
+<nav class="navbar">
+  <a href="index.html" class="nav-logo">
+    <img src="images/ksc-logo-red.jpeg" class="nav-logo-img" alt="KSC" onerror="this.style.display='none'">
+    <div class="nav-logo-text">
+      <span class="nav-logo-name">高顺昌 KSC</span>
+      <span class="nav-logo-sub">金属材料专家</span>
+    </div>
+  </a>
+  <button class="nav-toggle" type="button" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
+  <ul class="nav-links">
+    <li><a href="index.html"                       data-i18n="nav.home"     data-i18n-key="home">首页</a></li>
+    <li><a href="about.html"                       data-i18n="nav.about"    data-i18n-key="about">关于我们</a></li>
+    <li><a href="products.html"                    data-i18n="nav.products" data-i18n-key="products">产品中心</a></li>
+    <li><a href="factory.html"                      data-i18n="nav.factory"  data-i18n-key="factory">生产基地</a></li>
+    <li><a href="materials.html" class="active"     data-i18n="nav.materials" data-i18n-key="materials">材料及应用</a></li>
+    <li><a href="contact.html"                      data-i18n="nav.contact"  data-i18n-key="contact">联系我们</a></li>
+  </ul>
+  <div class="lang-switcher">
+    <button class="lang-btn"><span class="lang-current-label">ZH</span><span>&#9660;</span></button>
+    <div class="lang-dropdown">
+      <div class="lang-option active" data-lang="zh">ZH 中文</div>
+      <div class="lang-option"        data-lang="en">EN English</div>
+      <div class="lang-option"        data-lang="th">TH ภาษาไทย</div>
+      <div class="lang-option"        data-lang="vi">VN Tiếng Việt</div>
+    </div>
+  </div>
+</nav>
+
+<!-- PAGE HEADER -->
+<header class="page-header" style="background-image: url('images/cover.jpg');">
+  <div class="page-header-overlay"></div>
+  <div class="page-header-content">
+    <p class="section-kicker light" data-i18n="nav.products" data-i18n-key="products">产品中心</p>
+    <h1 data-i18n="materialsPage.mat_h" data-i18n-key="mat_h">材料及应用</h1>
+    <p data-i18n="materialsPage.mat_p" data-i18n-key="mat_p">覆盖特钢、矽钢片、铝材、不锈钢、铜材全品类</p>
+  </div>
+</header>
+
+<!-- MATERIALS NAV PILLS -->
+<div style="background: rgba(255,255,255,0.78); border-bottom: 1px solid rgba(15,34,61,0.08); position: sticky; top: 80px; z-index: 90;">
+  <div style="max-width: 1180px; margin: 0 auto; padding: 0 60px; display: flex; gap: 8px; overflow-x: auto;">
+    <a href="#steel"    class="mat-pill" data-i18n="materialsPage.pill_steel" data-i18n-key="pill_steel" style="display:block;padding:14px 20px;white-space:nowrap;color:var(--muted);font-size:14px;font-weight:700;text-decoration:none;border-bottom:3px solid transparent;transition:all 0.2s;">特钢</a>
+    <a href="#aluminum" class="mat-pill" data-i18n="materialsPage.pill_alu"  data-i18n-key="pill_alu"  style="display:block;padding:14px 20px;white-space:nowrap;color:var(--muted);font-size:14px;font-weight:700;text-decoration:none;border-bottom:3px solid transparent;transition:all 0.2s;">铝材</a>
+    <a href="#silicon"  class="mat-pill" data-i18n="materialsPage.pill_sil"  data-i18n-key="pill_sil"  style="display:block;padding:14px 20px;white-space:nowrap;color:var(--muted);font-size:14px;font-weight:700;text-decoration:none;border-bottom:3px solid transparent;transition:all 0.2s;">矽钢片</a>
+    <a href="#stainless"class="mat-pill" data-i18n="materialsPage.pill_ss"   data-i18n-key="pill_ss"   style="display:block;padding:14px 20px;white-space:nowrap;color:var(--muted);font-size:14px;font-weight:700;text-decoration:none;border-bottom:3px solid transparent;transition:all 0.2s;">不锈钢</a>
+    <a href="#copper"   class="mat-pill" data-i18n="materialsPage.pill_cu"   data-i18n-key="pill_cu"   style="display:block;padding:14px 20px;white-space:nowrap;color:var(--muted);font-size:14px;font-weight:700;text-decoration:none;border-bottom:3px solid transparent;transition:all 0.2s;">铜材</a>
+    <a href="#mills"    class="mat-pill" data-i18n="materialsPage.pill_mills"data-i18n-key="pill_mills"style="display:block;padding:14px 20px;white-space:nowrap;color:var(--muted);font-size:14px;font-weight:700;text-decoration:none;border-bottom:3px solid transparent;transition:all 0.2s;">钢厂参考</a>
+  </div>
+</div>
+
+<style>
+  .mat-pill:hover, .mat-pill.active { color: var(--accent) !important; border-bottom-color: var(--accent) !important; }
+</style>
+
+<!-- STEEL SECTION -->
+<section id="steel" class="section">
+  <div style="max-width: 1180px; margin: 0 auto;">
+
+    <div class="section-title">
+      <span class="section-kicker">01 · Special Steel</span>
+      <h2 data-i18n="materialsPage.sec_steel_h" data-i18n-key="sec_steel_h">特钢 / Special Steel</h2>
+      <p data-i18n="materialsPage.sec_steel_p" data-i18n-key="sec_steel_p">广泛应用于汽车、机械、五金、精密零部件行业</p>
+    </div>
+
+    <!-- Steel table -->
+    <div class="table-shell">
+      <table class="materials-table">
+        <thead>
+          <tr>
+            <th data-i18n="materialsPage.th_grade"   data-i18n-key="th_grade">牌号</th>
+            <th data-i18n="materialsPage.th_product" data-i18n-key="th_product">产品形式</th>
+            <th data-i18n="materialsPage.th_app"      data-i18n-key="th_app">主要应用</th>
+            <th data-i18n="materialsPage.th_tip"      data-i18n-key="th_tip">选型提示</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>S45C / S50C</strong></td>
+            <td>热轧/冷轧卷 · 板材</td>
+            <td>底盘横梁、发动机罩盖内板、结构加强板、座椅骨架冲压件</td>
+            <td>综合力学性能好，切削性优异，价格经济，是汽车冲压结构件性价比最高的选择</td>
+          </tr>
+          <tr>
+            <td><strong>42CrMo4 / SCM435</strong></td>
+            <td>圆钢 · 板材 · 锻件</td>
+            <td>变速箱齿轮（渗碳+磨齿）、驱动轴、高强度螺栓（底盘10.9级）</td>
+            <td>抗拉强度≥980MPa，韧性好，热处理性能稳定；是汽车传动系统的核心材料</td>
+          </tr>
+          <tr>
+            <td><strong>60Si2Mn / 65Mn</strong></td>
+            <td>热轧卷 · 带钢</td>
+            <td>汽车悬架板簧、螺旋弹簧、安全带预紧器弹簧、发动机气门弹簧</td>
+            <td>高弹性极限和抗疲劳性能；选错牌号直接导致弹簧断裂失效</td>
+          </tr>
+          <tr>
+            <td><strong>16MnCr5 / 20MnCrS5</strong></td>
+            <td>圆钢 · 锻件</td>
+            <td>变速箱同步器齿轮、轮毂轴承、凸轮轴链轮、电动车减速器齿轮</td>
+            <td>渗碳处理后表面硬度HRC 58-62，芯部韧性好；寿命比普通钢延长3-5倍</td>
+          </tr>
+          <tr>
+            <td><strong>20CrMnTiH</strong></td>
+            <td>圆钢 · 锻件</td>
+            <td>汽车变速箱齿轮、传动齿轮、驱动桥齿轮（渗碳+磨齿总成）</td>
+            <td>国产汽车变速箱齿轮首选材料，渗碳后晶粒细小，韧性好</td>
+          </tr>
+          <tr>
+            <td><strong>40Cr / 45Cr</strong></td>
+            <td>圆钢 · 棒材</td>
+            <td>转向节、半轴、传动轴法兰、连接杆（调质处理后使用）</td>
+            <td>调质处理后综合力学性能好；40Cr是国内汽车机械行业最通用的合金钢</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+  </div>
+</section>
+
+<!-- ALUMINUM SECTION -->
+<section id="aluminum" class="section section-tint">
+  <div style="max-width: 1180px; margin: 0 auto;">
+
+    <div class="section-title">
+      <span class="section-kicker">02 · Aluminum</span>
+      <h2 data-i18n="materialsPage.sec_alu_h" data-i18n-key="sec_alu_h">铝材 / Aluminum</h2>
+      <p data-i18n="materialsPage.sec_alu_p" data-i18n-key="sec_alu_p">涵盖汽车轻量化、新能源电池、电子散热等高端应用</p>
+    </div>
+
+    <div class="table-shell">
+      <table class="materials-table">
+        <thead>
+          <tr>
+            <th data-i18n="materialsPage.th_grade"   data-i18n-key="th_grade">牌号</th>
+            <th data-i18n="materialsPage.th_product" data-i18n-key="th_product">产品形式</th>
+            <th data-i18n="materialsPage.th_app"      data-i18n-key="th_app">主要应用</th>
+            <th data-i18n="materialsPage.th_tip"      data-i18n-key="th_tip">选型提示</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>AL6061-T6 / AL6063-T5</strong></td>
+            <td>板材 · 型材 · 棒材</td>
+            <td>新能源汽车电池包外壳、电机壳体、IGBT散热基板、车载充电机OBC壳体</td>
+            <td>T6热处理后抗拉强度310MPa，兼具良好加工性、焊接性和耐腐蚀性；6063更适合挤压散热型材</td>
+          </tr>
+          <tr>
+            <td><strong>AL7075-T6 / AL7055-T7751</strong></td>
+            <td>板材 · 棒材 · 锻件</td>
+            <td>新能源汽车防撞梁、吸能盒、车身结构件（铝合金白车身减重件）</td>
+            <td>抗拉强度≥570MPa，比钢材轻约60%；应用于碰撞安全件和高端轻量化结构</td>
+          </tr>
+          <tr>
+            <td><strong>AL3003-H24 / AL5052-H32</strong></td>
+            <td>板材 · 带材</td>
+            <td>汽车钣金件、散热器鳍片、冷却风扇叶、LED大灯散热基板</td>
+            <td>加工性和焊接性优异，耐大气腐蚀；AL1100导电导热性能最好</td>
+          </tr>
+          <tr>
+            <td><strong>AL5052-O / AL5754-O</strong></td>
+            <td>板材 · 带材</td>
+            <td>汽车车门内板、发动机舱钣金件、底盘防护板</td>
+            <td>O状态软，易冲压成形；5052在汽车冲压钣金中替代部分低碳钢实现轻量化</td>
+          </tr>
+          <tr>
+            <td><strong>AL8011-H22 / AL8079</strong></td>
+            <td>铝箔 · 薄板</td>
+            <td>汽车空调蒸发器翅片、散热器中冷器、动力电池热管理系统钎焊箔</td>
+            <td>铝箔钎焊材料是散热器总成的关键中间材料；钎焊后强度高、耐腐蚀</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+  </div>
+</section>
+
+<!-- SILICON STEEL SECTION -->
+<section id="silicon" class="section">
+  <div style="max-width: 1180px; margin: 0 auto;">
+
+    <div class="section-title">
+      <span class="section-kicker">03 · Silicon Steel</span>
+      <h2 data-i18n="materialsPage.sec_sil_h" data-i18n-key="sec_sil_h">矽钢片 / Silicon Steel</h2>
+      <p data-i18n="materialsPage.sec_sil_p" data-i18n-key="sec_sil_p">无取向/取向矽钢片，应用于电机、变压器等电气设备</p>
+    </div>
+
+    <div class="table-shell">
+      <table class="materials-table">
+        <thead>
+          <tr>
+            <th data-i18n="materialsPage.th_grade"   data-i18n-key="th_grade">牌号</th>
+            <th data-i18n="materialsPage.th_product" data-i18n-key="th_product">产品形式</th>
+            <th data-i18n="materialsPage.th_app"      data-i18n-key="th_app">主要应用</th>
+            <th data-i18n="materialsPage.th_tip"      data-i18n-key="th_tip">选型提示</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>B20AT / 20WT1200</strong></td>
+            <td>矽钢片卷 · 切片</td>
+            <td>新能源驱动电机铁芯（永磁同步电机PMSM）、电动车驱动电机</td>
+            <td>0.20mm超薄规格，涡流损耗最低；Tesla、比亚迪均采用0.2mm规格用于IE5能效电机</td>
+          </tr>
+          <tr>
+            <td><strong>B35A250 / 50W290</strong></td>
+            <td>矽钢片卷 · 切片</td>
+            <td>新能源驱动电机铁芯（感应异步电机IM）、空调鼓风机电机、冷却风扇电机</td>
+            <td>成本优先方案，IE3能效够用；35A250是无取向矽钢片最主流牌号</td>
+          </tr>
+          <tr>
+            <td><strong>M3 / M5（取向矽钢片）</strong></td>
+            <td>取向矽钢片卷</td>
+            <td>车载充电机主变压器铁芯、光伏逆变器变压器、电池管理系统BMS隔离变压器</td>
+            <td>取向矽钢片沿轧向磁通密度比无取向高约30%；适合单向磁化应用，开关频率≤20kHz</td>
+          </tr>
+          <tr>
+            <td><strong>B35A250 / 35W250</strong></td>
+            <td>矽钢片卷</td>
+            <td>电动助力转向EPS电机铁芯、汽车油泵电机、制动真空泵电机</td>
+            <td>中等功率电机，平衡成本与性能；要求高可靠性和低噪音</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+  </div>
+</section>
+
+<!-- STAINLESS STEEL SECTION -->
+<section id="stainless" class="section section-tint">
+  <div style="max-width: 1180px; margin: 0 auto;">
+
+    <div class="section-title">
+      <span class="section-kicker">04 · Stainless Steel</span>
+      <h2 data-i18n="materialsPage.sec_ss_h" data-i18n-key="sec_ss_h">不锈钢 / Stainless Steel</h2>
+      <p data-i18n="materialsPage.sec_ss_p" data-i18n-key="sec_ss_p">耐腐蚀、高强度，广泛用于汽车、电子、五金、食品设备等行业</p>
+    </div>
+
+    <div class="table-shell">
+      <table class="materials-table">
+        <thead>
+          <tr>
+            <th data-i18n="materialsPage.th_grade"   data-i18n-key="th_grade">牌号</th>
+            <th data-i18n="materialsPage.th_product" data-i18n-key="th_product">产品形式</th>
+            <th data-i18n="materialsPage.th_app"      data-i18n-key="th_app">主要应用</th>
+            <th data-i18n="materialsPage.th_tip"      data-i18n-key="th_tip">选型提示</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>SUS304 / 06Cr19Ni10</strong></td>
+            <td>冷轧卷 · 板材 · 带材</td>
+            <td>汽车排气系统歧管至中段、发动机ECU外壳、毫米波雷达外壳、动力电池Pack外壳</td>
+            <td>最广泛应用的奥氏体不锈钢，耐腐蚀性出色；SUS304在汽车排气系统高温段不可替代</td>
+          </tr>
+          <tr>
+            <td><strong>SUS316L / 06Cr17Ni12Mo2</strong></td>
+            <td>冷轧卷 · 板材 · 管材</td>
+            <td>沿海地区电动汽车充电桩外壳、动力电池冷却系统管路、ADAS传感器支架</td>
+            <td>添加Mo 2-3%，耐点蚀能力比304强3倍以上；南方沿海和电动汽车首选</td>
+          </tr>
+          <tr>
+            <td><strong>SUS430 / 10Cr17</strong></td>
+            <td>冷轧卷 · 板材</td>
+            <td>汽车装饰件、车门把手、内饰件、排气系统尾段（经济型耐热方案）</td>
+            <td>铁素体不锈钢，价格比304低约30%；430耐氯离子腐蚀性能差，不适合沿海</td>
+          </tr>
+          <tr>
+            <td><strong>SUS301 / 12Cr17Ni7</strong></td>
+            <td>冷轧卷 · 带材</td>
+            <td>汽车安全带预紧器弹簧、卡扣、弹性元件（高弹性+耐腐蚀）</td>
+            <td>经冷加工后抗拉强度可达≥1500MPa；是精密弹性零件的首选不锈钢</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+  </div>
+</section>
+
+<!-- COPPER SECTION -->
+<section id="copper" class="section">
+  <div style="max-width: 1180px; margin: 0 auto;">
+
+    <div class="section-title">
+      <span class="section-kicker">05 · Copper</span>
+      <h2 data-i18n="materialsPage.sec_cu_h" data-i18n-key="sec_cu_h">铜材 / Copper</h2>
+      <p data-i18n="materialsPage.sec_cu_p" data-i18n-key="sec_cu_p">带材、线材、管材，广泛用于电气与热交换应用</p>
+    </div>
+
+    <div class="table-shell">
+      <table class="materials-table">
+        <thead>
+          <tr>
+            <th data-i18n="materialsPage.th_grade"   data-i18n-key="th_grade">牌号</th>
+            <th data-i18n="materialsPage.th_product" data-i18n-key="th_product">产品形式</th>
+            <th data-i18n="materialsPage.th_app"      data-i18n-key="th_app">主要应用</th>
+            <th data-i18n="materialsPage.th_tip"      data-i18n-key="th_tip">选型提示</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>C11000 / T2（C1100）</strong></td>
+            <td>铜带 · 铜板 · 铜线</td>
+            <td>新能源汽车电控连接器、充电接口端子、高导电铜排（电导率≥100% IACS）</td>
+            <td>纯铜最高导电等级，电导率≥100% IACS；是新能源汽车高压电气系统的首选导体</td>
+          </tr>
+          <tr>
+            <td><strong>C51900 / QSn6.5-0.1</strong></td>
+            <td>磷青铜带 · 棒材</td>
+            <td>汽车继电器触点、连接器针座、开关弹簧片（高弹性+导电）</td>
+            <td>磷青铜兼具良好弹性、导电性和耐疲劳性；是汽车电子连接器最广泛使用的铜合金</td>
+          </tr>
+          <tr>
+            <td><strong>C10200 / TP2（零氧铜）</strong></td>
+            <td>铜管 · 毛细管</td>
+            <td>汽车空调冷凝器管路、蒸发器管路、热交换器管路（高纯净度无氧铜）</td>
+            <td>氧含量≤10ppm，纯净度极高；确保焊接性和耐腐蚀性，是汽车空调系统的标准用管</td>
+          </tr>
+          <tr>
+            <td><strong>C26000 / H70（C70）</strong></td>
+            <td>黄铜带 · 棒材</td>
+            <td>汽车水温传感器壳体、燃油滤网、黄铜紧固件（高塑性黄铜）</td>
+            <td>H70黄铜塑性最好，深冲性能优异；广泛用于汽车零部件的冲压成形件</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+  </div>
+</section>
+
+<!-- STEEL MILLS SECTION -->
+<section id="mills" class="section section-tint">
+  <div style="max-width: 1180px; margin: 0 auto;">
+
+    <div class="section-title">
+      <span class="section-kicker">06 · Steel Mill Reference</span>
+      <h2 data-i18n="materialsPage.sec_mills_h" data-i18n-key="sec_mills_h">国内钢厂参考</h2>
+      <p data-i18n="materialsPage.sec_mills_p" data-i18n-key="sec_mills_p">常用钢厂简称对照，方便快速沟通与采购</p>
+    </div>
+
+    <!-- Mill type tabs -->
+    <div style="display:flex;gap:8px;margin-bottom:28px;flex-wrap:wrap;">
+      <button class="mill-tab-btn active" onclick="showMillTab('gov')" data-i18n="materialsPage.tab_gov" data-i18n-key="tab_gov" style="padding:10px 20px;border-radius:14px;border:1px solid rgba(15,34,61,0.15);background:#fff;cursor:pointer;font-weight:700;font-size:14px;color:var(--primary);transition:all 0.2s;">国有大型钢企</button>
+      <button class="mill-tab-btn" onclick="showMillTab('pri')" data-i18n="materialsPage.tab_pri" data-i18n-key="tab_pri" style="padding:10px 20px;border-radius:14px;border:1px solid rgba(15,34,61,0.15);background:#fff;cursor:pointer;font-weight:700;font-size:14px;color:var(--primary);transition:all 0.2s;">民营钢企</button>
+      <button class="mill-tab-btn" onclick="showMillTab('spe')" data-i18n="materialsPage.tab_spe" data-i18n-key="tab_spe" style="padding:10px 20px;border-radius:14px;border:1px solid rgba(15,34,61,0.15);background:#fff;cursor:pointer;font-weight:700;font-size:14px;color:var(--primary);transition:all 0.2s;">特钢专业钢企</button>
+    </div>
+
+    <style>.mill-tab-btn:hover,.mill-tab-btn.active{background:var(--primary)!important;color:var(--accent-soft)!important;border-color:var(--primary)!important;}</style>
+
+    <!-- Government mills -->
+    <div id="mills-gov" class="mill-grid">
+      <div class="info-panel" style="padding:24px;">
+        <div style="display:flex;align-items:center;gap:14px;margin-bottom:14px;">
+          <div style="background:var(--primary);color:var(--accent-soft);font-weight:900;font-size:28px;font-family:'Manrope',sans-serif;padding:8px 14px;border-radius:14px;">宝钢</div>
+          <div><div style="font-weight:800;color:var(--primary);font-size:16px;">Baosteel</div><div style="color:var(--muted);font-size:12px;">宝山钢铁</div></div>
+        </div>
+        <p style="color:var(--muted);font-size:13px;line-height:1.7;">汽车板（O5板）全球前三，硅钢（取向/无取向）国内领先，家电板高端市场垄断地位。</p>
+      </div>
+      <div class="info-panel" style="padding:24px;">
+        <div style="display:flex;align-items:center;gap:14px;margin-bottom:14px;">
+          <div style="background:var(--primary);color:var(--accent-soft);font-weight:900;font-size:28px;font-family:'Manrope',sans-serif;padding:8px 14px;border-radius:14px;">鞍钢</div>
+          <div><div style="font-weight:800;color:var(--primary);font-size:16px;">Ansteel</div><div style="color:var(--muted);font-size:12px;">鞍钢集团</div></div>
+        </div>
+        <p style="color:var(--muted);font-size:13px;line-height:1.7;">重轨（全国占比40%），造船板、压力容器板国内前三，鲅鱼圈港物流优势明显。</p>
+      </div>
+      <div class="info-panel" style="padding:24px;">
+        <div style="display:flex;align-items:center;gap:14px;margin-bottom:14px;">
+          <div style="background:var(--primary);color:var(--accent-soft);font-weight:900;font-size:28px;font-family:'Manrope',sans-serif;padding:8px 14px;border-radius:14px;">首钢</div>
+          <div><div style="font-weight:800;color:var(--primary);font-size:16px;">Shougang</div><div style="color:var(--muted);font-size:12px;">首钢集团</div></div>
+        </div>
+        <p style="color:var(--muted);font-size:13px;line-height:1.7;">汽车用钢（IF钢、高强钢）国内领先，电工钢（无取向）品质优良，北京区位优势。</p>
+      </div>
+      <div class="info-panel" style="padding:24px;">
+        <div style="display:flex;align-items:center;gap:14px;margin-bottom:14px;">
+          <div style="background:var(--primary);color:var(--accent-soft);font-weight:900;font-size:28px;font-family:'Manrope',sans-serif;padding:8px 14px;border-radius:14px;">太钢</div>
+          <div><div style="font-weight:800;color:var(--primary);font-size:16px;">TISCO</div><div style="color:var(--muted);font-size:12px;">太原钢铁</div></div>
+        </div>
+        <p style="color:var(--muted);font-size:13px;line-height:1.7;">不锈钢（300系）国内龙头，笔尖钢打破进口垄断，轨道交通用不锈钢国产化。</p>
+      </div>
+      <div class="info-panel" style="padding:24px;">
+        <div style="display:flex;align-items:center;gap:14px;margin-bottom:14px;">
+          <div style="background:var(--primary);color:var(--accent-soft);font-weight:900;font-size:28px;font-family:'Manrope',sans-serif;padding:8px 14px;border-radius:14px;">河钢</div>
+          <div><div style="font-weight:800;color:var(--primary);font-size:16px;">HBIS</div><div style="color:var(--muted);font-size:12px;">河钢集团</div></div>
+        </div>
+        <p style="color:var(--muted);font-size:13px;line-height:1.7;">家电板国内第一，汽车板覆盖欧美系/日系，家电钢标配"河钢牌"，硅钢产能全国第二。</p>
+      </div>
+      <div class="info-panel" style="padding:24px;">
+        <div style="display:flex;align-items:center;gap:14px;margin-bottom:14px;">
+          <div style="background:var(--primary);color:var(--accent-soft);font-weight:900;font-size:28px;font-family:'Manrope',sans-serif;padding:8px 14px;border-radius:14px;">华菱</div>
+          <div><div style="font-weight:800;color:var(--primary);font-size:16px;">Hualong</div><div style="color:var(--muted);font-size:12px;">湖南华菱钢铁</div></div>
+        </div>
+        <p style="color:var(--muted);font-size:13px;line-height:1.7;">管线钢（X70~X100）全球前三，锰系合金钢、特殊螺纹钢（抗腐蚀）领先。</p>
+      </div>
+    </div>
+
+    <!-- Private mills -->
+    <div id="mills-pri" class="mill-grid" style="display:none;">
+      <div class="info-panel" style="padding:24px;">
+        <div style="display:flex;align-items:center;gap:14px;margin-bottom:14px;">
+          <div style="background:var(--primary);color:var(--accent-soft);font-weight:900;font-size:28px;font-family:'Manrope',sans-serif;padding:8px 14px;border-radius:14px;">建龙</div>
+          <div><div style="font-weight:800;color:var(--primary);font-size:16px;">Jianlong</div><div style="color:var(--muted);font-size:12px;">北京建龙重工</div></div>
+        </div>
+        <p style="color:var(--muted);font-size:13px;line-height:1.7;">特钢（轴承钢、齿轮钢）快速扩张，轴承钢供应多家车厂，钒产品（全钒液流电池）全产业链。</p>
+      </div>
+      <div class="info-panel" style="padding:24px;">
+        <div style="display:flex;align-items:center;gap:14px;margin-bottom:14px;">
+          <div style="background:var(--primary);color:var(--accent-soft);font-weight:900;font-size:28px;font-family:'Manrope',sans-serif;padding:8px 14px;border-radius:14px;">方大</div>
+          <div><div style="font-weight:800;color:var(--primary);font-size:16px;">Fangda</div><div style="color:var(--muted);font-size:12px;">方大特钢科技</div></div>
+        </div>
+        <p style="color:var(--muted);font-size:13px;line-height:1.7;">弹簧扁钢（汽车板簧原材料）全国最大供应商，易切削钢、精细圆钢特钢领域特色明显。</p>
+      </div>
+      <div class="info-panel" style="padding:24px;">
+        <div style="display:flex;align-items:center;gap:14px;margin-bottom:14px;">
+          <div style="background:var(--primary);color:var(--accent-soft);font-weight:900;font-size:28px;font-family:'Manrope',sans-serif;padding:8px 14px;border-radius:14px;">中天</div>
+          <div><div style="font-weight:800;color:var(--primary);font-size:16px;">Zenatti</div><div style="color:var(--muted);font-size:12px;">中天钢铁集团</div></div>
+        </div>
+        <p style="color:var(--muted);font-size:13px;line-height:1.7;">精品建材（螺纹钢、线材）华东龙头，帘线钢（B热）供应全球轮胎企业，电炉短流程环保。</p>
+      </div>
+      <div class="info-panel" style="padding:24px;">
+        <div style="display:flex;align-items:center;gap:14px;margin-bottom:14px;">
+          <div style="background:var(--primary);color:var(--accent-soft);font-weight:900;font-size:28px;font-family:'Manrope',sans-serif;padding:8px 14px;border-radius:14px;">敬业</div>
+          <div><div style="font-weight:800;color:var(--primary);font-size:16px;">Jingye</div><div style="color:var(--muted);font-size:12px;">敬业集团</div></div>
+        </div>
+        <p style="color:var(--muted);font-size:13px;line-height:1.7;">中厚板（锅炉板、容器板、桥梁板）品种齐全，螺纹钢（500E高强钢筋）北方市场占有率高。</p>
+      </div>
+      <div class="info-panel" style="padding:24px;">
+        <div style="display:flex;align-items:center;gap:14px;margin-bottom:14px;">
+          <div style="background:var(--primary);color:var(--accent-soft);font-weight:900;font-size:28px;font-family:'Manrope',sans-serif;padding:8px 14px;border-radius:14px;">柳钢</div>
+          <div><div style="font-weight:800;color:var(--primary);font-size:16px;">Liuzhou Steel</div><div style="color:var(--muted);font-size:12px;">广西柳州钢铁</div></div>
+        </div>
+        <p style="color:var(--muted);font-size:13px;line-height:1.7;">华南建筑用钢龙头，螺纹钢/线材主导两广市场，物流成本优势明显（柳州地理位置）。</p>
+      </div>
+      <div class="info-panel" style="padding:24px;">
+        <div style="display:flex;align-items:center;gap:14px;margin-bottom:14px;">
+          <div style="background:var(--primary);color:var(--accent-soft);font-weight:900;font-size:28px;font-family:'Manrope',sans-serif;padding:8px 14px;border-radius:14px;">盛隆</div>
+          <div><div style="font-weight:800;color:var(--primary);font-size:16px;">Shenglong</div><div style="color:var(--muted);font-size:12px;">广西盛隆冶金</div></div>
+        </div>
+        <p style="color:var(--muted);font-size:13px;line-height:1.7;">广西最大民营钢企，建筑用钢主导华南，总部防城港（沿海+物流优势），镍基合金深加工。</p>
+      </div>
+    </div>
+
+    <!-- Specialty steel mills -->
+    <div id="mills-spe" class="mill-grid" style="display:none;">
+      <div class="info-panel" style="padding:24px;">
+        <div style="display:flex;align-items:center;gap:14px;margin-bottom:14px;">
+          <div style="background:var(--primary);color:var(--accent-soft);font-weight:900;font-size:28px;font-family:'Manrope',sans-serif;padding:8px 14px;border-radius:14px;">抚顺特钢</div>
+          <div><div style="font-weight:800;color:var(--primary);font-size:16px;">Fushun Special Steel</div></div>
+        </div>
+        <p style="color:var(--muted);font-size:13px;line-height:1.7;">中国特钢长材No.1，高温合金（GH4169/Inconel718）航空航天军工垄断，模具钢（P20/H13/D2）塑模/冲模行业标准。</p>
+      </div>
+      <div class="info-panel" style="padding:24px;">
+        <div style="display:flex;align-items:center;gap:14px;margin-bottom:14px;">
+          <div style="background:var(--primary);color:var(--accent-soft);font-weight:900;font-size:28px;font-family:'Manrope',sans-serif;padding:8px 14px;border-radius:14px;">兴澄特钢</div>
+          <div><div style="font-weight:800;color:var(--primary);font-size:16px;">Xingcheng Special Steel</div></div>
+        </div>
+        <p style="color:var(--muted);font-size:13px;line-height:1.7;">轴承钢（氧含量≤5ppm）品质达SKF/FAG标准，风电轴承钢全球最大供应商，纯净度高（[O]≤10ppm）。</p>
+      </div>
+      <div class="info-panel" style="padding:24px;">
+        <div style="display:flex;align-items:center;gap:14px;margin-bottom:14px;">
+          <div style="background:var(--primary);color:var(--accent-soft);font-weight:900;font-size:28px;font-family:'Manrope',sans-serif;padding:8px 14px;border-radius:14px;">大冶特钢</div>
+          <div><div style="font-weight:800;color:var(--primary);font-size:16px;">Daye Special Steel</div></div>
+        </div>
+        <p style="color:var(--muted);font-size:13px;line-height:1.7;">齿轮钢（20CrMnTiH系列）汽车变速箱配套量全国第一，非调质钢（免退火）节能环保方向行业领先。</p>
+      </div>
+      <div class="info-panel" style="padding:24px;">
+        <div style="display:flex;align-items:center;gap:14px;margin-bottom:14px;">
+          <div style="background:var(--primary);color:var(--accent-soft);font-weight:900;font-size:28px;font-family:'Manrope',sans-serif;padding:8px 14px;border-radius:14px;">东北特钢</div>
+          <div><div style="font-weight:800;color:var(--primary);font-size:16px;">Dongbei Special Steel</div></div>
+        </div>
+        <p style="color:var(--muted);font-size:13px;line-height:1.7;">工模具钢（H13/D2/M2高速钢）国内品种最全，轴承钢高端精密轴承配套，弹簧钢丝汽车零部件。</p>
+      </div>
+      <div class="info-panel" style="padding:24px;">
+        <div style="display:flex;align-items:center;gap:14px;margin-bottom:14px;">
+          <div style="background:var(--primary);color:var(--accent-soft);font-weight:900;font-size:28px;font-family:'Manrope',sans-serif;padding:8px 14px;border-radius:14px;">宝武特冶</div>
+          <div><div style="font-weight:800;color:var(--primary);font-size:16px;">Baowu Special Metallurgy</div></div>
+        </div>
+        <p style="color:var(--muted);font-size:13px;line-height:1.7;">航空航天高温合金（叶片级Inconel718）国家重大工程配套，核电用钢（Z2CND等）完全进口替代。</p>
+      </div>
+      <div class="info-panel" style="padding:24px;">
+        <div style="display:flex;align-items:center;gap:14px;margin-bottom:14px;">
+          <div style="background:var(--primary);color:var(--accent-soft);font-weight:900;font-size:28px;font-family:'Manrope',sans-serif;padding:8px 14px;border-radius:14px;">二重</div>
+          <div><div style="font-weight:800;color:var(--primary);font-size:16px;">Erzhong / 第二重型机械</div></div>
+        </div>
+        <p style="color:var(--muted);font-size:13px;line-height:1.7;">大型模锻件（航空发动机盘件）国之重器，核电主管道（超低碳钢）CHINA示范工程配套，超大型铸锻件世界前三。</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<style>
+.mill-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 20px; }
+</style>
+
+<!-- CTA SECTION -->
+<section class="cta-section">
+  <div style="max-width: 1180px; margin: 0 auto;">
+    <div class="cta-shell" style="padding:48px 42px;border-radius:30px;background:linear-gradient(135deg, #132b49 0%, #0b1828 100%);display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap;">
+      <div>
+        <h2 data-i18n="materialsPage.cta_h" data-i18n-key="cta_h" style="font-size:clamp(20px,3vw,30px);font-weight:900;color:#fff;margin-bottom:8px;">需要专业材料咨询？</h2>
+        <p data-i18n="materialsPage.cta_p" data-i18n-key="cta_p" style="color:rgba(255,255,255,0.65);font-size:15px;max-width:520px;">KSC 销售工程师平均10年以上行业经验，可根据您的图纸快速推荐合适材料。</p>
+      </div>
+      <a href="contact.html" class="btn-primary" data-i18n="materialsPage.cta_btn" data-i18n-key="cta_btn" style="display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 28px;border-radius:16px;background:linear-gradient(135deg, #deb56a 0%, #c88f33 100%);color:#081523;font-size:15px;font-weight:800;text-decoration:none;white-space:nowrap;">发送询价 →</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-grid" style="display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:36px;max-width:1200px;margin:0 auto;">
+    <div class="footer-brand">
+      <h3 style="color:var(--accent-soft);font-size:24px;font-weight:900;">高顺昌 KSC</h3>
+      <p data-i18n="home.footer_brand" data-i18n-key="footer_brand" style="margin-top:12px;max-width:380px;font-size:14px;color:rgba(255,255,255,0.68);">高顺昌控股有限公司（KSC）专注金属材料行业超过25年，是中国、越南、泰国领先的金属材料供应商。</p>
+      <div class="footer-wechat" style="margin-top:20px;">
+        <p style="font-size:12px;color:rgba(255,255,255,0.68);" data-i18n="home.footer_scan" data-i18n-key="footer_scan">扫码加微信</p>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4 style="color:var(--accent-soft);margin-bottom:16px;font-size:13px;text-transform:uppercase;letter-spacing:0.16em;" data-i18n="home.footer_link1" data-i18n-key="footer_link1">快速链接</h4>
+      <ul style="list-style:none;">
+        <li><a href="index.html"    style="color:rgba(255,255,255,0.68);text-decoration:none;font-size:14px;" data-i18n="home.footer_link1" data-i18n-key="footer_link1">首页</a></li>
+        <li style="margin-top:10px;"><a href="about.html"   style="color:rgba(255,255,255,0.68);text-decoration:none;font-size:14px;" data-i18n="nav.about"   data-i18n-key="about">关于我们</a></li>
+        <li style="margin-top:10px;"><a href="products.html"style="color:rgba(255,255,255,0.68);text-decoration:none;font-size:14px;" data-i18n="nav.products"data-i18n-key="products">产品中心</a></li>
+        <li style="margin-top:10px;"><a href="factory.html" style="color:rgba(255,255,255,0.68);text-decoration:none;font-size:14px;" data-i18n="nav.factory" data-i18n-key="factory">生产基地</a></li>
+        <li style="margin-top:10px;"><a href="materials.html"style="color:rgba(255,255,255,0.68);text-decoration:none;font-size:14px;">材料及应用</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4 style="color:var(--accent-soft);margin-bottom:16px;font-size:13px;text-transform:uppercase;letter-spacing:0.16em;" data-i18n="home.footer_prod1" data-i18n-key="footer_prod1">产品中心</h4>
+      <ul style="list-style:none;">
+        <li><a href="products.html" style="color:rgba(255,255,255,0.68);text-decoration:none;font-size:14px;" data-i18n="home.footer_prod1" data-i18n-key="footer_prod1">特钢/精冲钢</a></li>
+        <li style="margin-top:10px;"><a href="products.html" style="color:rgba(255,255,255,0.68);text-decoration:none;font-size:14px;" data-i18n="home.footer_prod2" data-i18n-key="footer_prod2">矽钢片</a></li>
+        <li style="margin-top:10px;"><a href="products.html" style="color:rgba(255,255,255,0.68);text-decoration:none;font-size:14px;" data-i18n="home.footer_prod3" data-i18n-key="footer_prod3">铝材</a></li>
+        <li style="margin-top:10px;"><a href="products.html" style="color:rgba(255,255,255,0.68);text-decoration:none;font-size:14px;" data-i18n="home.footer_prod4" data-i18n-key="footer_prod4">不锈钢</a></li>
+        <li style="margin-top:10px;"><a href="products.html" style="color:rgba(255,255,255,0.68);text-decoration:none;font-size:14px;" data-i18n="home.footer_prod5" data-i18n-key="footer_prod5">铜材</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4 style="color:var(--accent-soft);margin-bottom:16px;font-size:13px;text-transform:uppercase;letter-spacing:0.16em;" data-i18n="home.footer_contact1" data-i18n-key="footer_contact1">联系我们</h4>
+      <ul style="list-style:none;">
+        <li style="color:rgba(255,255,255,0.68);font-size:14px;" data-i18n="home.footer_contact1" data-i18n-key="footer_contact1">香港总部 HQ</li>
+        <li style="margin-top:10px;color:rgba(255,255,255,0.68);font-size:14px;" data-i18n="home.footer_contact2" data-i18n-key="footer_contact2">东莞/深圳工厂</li>
+        <li style="margin-top:10px;color:rgba(255,255,255,0.68);font-size:14px;" data-i18n="home.footer_contact3" data-i18n-key="footer_contact3">越南工厂</li>
+        <li style="margin-top:10px;color:rgba(255,255,255,0.68);font-size:14px;" data-i18n="home.footer_contact4" data-i18n-key="footer_contact4">泰国工厂</li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom" style="max-width:1200px;margin:40px auto 0;padding-top:20px;border-top:1px solid rgba(255,255,255,0.08);text-align:center;font-size:12px;color:rgba(255,255,255,0.68);">
+    <p data-i18n="materialsPage.footer_copy" data-i18n-key="footer_copy">© 2025 高顺昌控股有限公司 保留所有权利</p>
+  </div>
+</footer>
+
+<!-- FLOATING WECHAT -->
+<a href="contact.html" class="floating-wechat" style="position:fixed;right:24px;bottom:24px;z-index:999;display:inline-flex;align-items:center;gap:10px;min-height:58px;padding:0 18px;border-radius:999px;background:linear-gradient(135deg, #35bf70 0%, #1f934f 100%);color:#fff;text-decoration:none;font-size:14px;font-weight:800;box-shadow:0 20px 38px rgba(27,122,66,0.35);">
+  <span data-i18n="home.float_wechat" data-i18n-key="float_wechat">微信联系</span>
+</a>
+
+<script>
+function showMillTab(tab) {
+  document.getElementById('mills-gov').style.display = tab === 'gov' ? 'grid' : 'none';
+  document.getElementById('mills-pri').style.display = tab === 'pri' ? 'grid' : 'none';
+  document.getElementById('mills-spe').style.display = tab === 'spe' ? 'grid' : 'none';
+  document.querySelectorAll('.mill-tab-btn').forEach(function(b) { b.classList.remove('active'); });
+  document.querySelector('.mill-tab-btn[onclick="showMillTab(\\'' + tab + '\\')"]').classList.add('active');
+}
+
+// Active pill tracking on scroll
+window.addEventListener('scroll', function() {
+  const sections = document.querySelectorAll('section[id]');
+  const pills = document.querySelectorAll('.mat-pill');
+  let current = '';
+  sections.forEach(function(sec) {
+    if (sec.getBoundingClientRect().top < 200) current = sec.id;
+  });
+  pills.forEach(function(pill) {
+    pill.classList.remove('active');
+    if (pill.getAttribute('href') === '#' + current) pill.classList.add('active');
+  });
+});
+</script>
+<script src="app.js?v=20260507"></script>
+</body>
+</html>
