@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="820" viewBox="0 0 1400 820" role="img" aria-labelledby="title desc">
+  <title id="title">KSC Partner Mills Network</title>
+  <desc id="desc">A styled partner network board listing representative Chinese steel, aluminum and stainless steel mills.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#081523"/>
+      <stop offset="0.58" stop-color="#122846"/>
+      <stop offset="1" stop-color="#0f223d"/>
+    </linearGradient>
+    <linearGradient id="card" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.98"/>
+      <stop offset="1" stop-color="#eef3f8" stop-opacity="0.94"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#000000" flood-opacity="0.22"/>
+    </filter>
+  </defs>
+  <rect width="1400" height="820" rx="44" fill="url(#bg)"/>
+  <circle cx="1240" cy="110" r="180" fill="#d1a04a" opacity="0.11"/>
+  <circle cx="190" cy="720" r="210" fill="#ffffff" opacity="0.06"/>
+  <g transform="translate(70 58)">
+    <text x="0" y="38" fill="#f0d39a" font-family="Manrope, Arial, sans-serif" font-size="18" font-weight="800" letter-spacing="5">STRATEGIC MILL NETWORK</text>
+    <text x="0" y="98" fill="#ffffff" font-family="Manrope, Arial, sans-serif" font-size="48" font-weight="800">Representative Domestic Mill Partners</text>
+    <text x="0" y="136" fill="#c6d2df" font-family="Manrope, Arial, sans-serif" font-size="22">Steel · Aluminum · Stainless Steel · Stable supply chain cooperation</text>
+  </g>
+  <g transform="translate(70 220)" filter="url(#shadow)">
+    <rect x="0" y="0" width="392" height="482" rx="30" fill="url(#card)"/>
+    <rect x="24" y="24" width="344" height="58" rx="18" fill="#0f223d"/>
+    <text x="48" y="62" fill="#ffffff" font-family="Manrope, Arial, sans-serif" font-size="24" font-weight="800">STEEL MILLS</text>
+    <g font-family="Manrope, Arial, sans-serif" font-size="25" font-weight="800" fill="#13243a">
+      <text x="48" y="132">BAOWU 宝武钢铁</text>
+      <text x="48" y="190">ANSTEEL 鞍钢集团</text>
+      <text x="48" y="248">SHOUGANG 首钢集团</text>
+      <text x="48" y="306">HBIS 河钢集团</text>
+      <text x="48" y="364">SHAGANG 沙钢集团</text>
+      <text x="48" y="422">BENSTEEL 本钢集团</text>
+    </g>
+  </g>
+  <g transform="translate(504 220)" filter="url(#shadow)">
+    <rect x="0" y="0" width="392" height="482" rx="30" fill="url(#card)"/>
+    <rect x="24" y="24" width="344" height="58" rx="18" fill="#d1a04a"/>
+    <text x="48" y="62" fill="#081523" font-family="Manrope, Arial, sans-serif" font-size="24" font-weight="800">ALUMINUM MILLS</text>
+    <g font-family="Manrope, Arial, sans-serif" font-size="25" font-weight="800" fill="#13243a">
+      <text x="48" y="132">CHALCO 中国铝业</text>
+      <text x="48" y="190">HONGQIAO 宏桥集团</text>
+      <text x="48" y="248">NANSHAN 南山铝业</text>
+      <text x="48" y="306">MINGTAI 明泰铝业</text>
+      <text x="48" y="364">YONGJIE 永杰新材</text>
+      <text x="48" y="422">DINGSHENG 鼎胜新材</text>
+    </g>
+  </g>
+  <g transform="translate(938 220)" filter="url(#shadow)">
+    <rect x="0" y="0" width="392" height="482" rx="30" fill="url(#card)"/>
+    <rect x="24" y="24" width="344" height="58" rx="18" fill="#2ea865"/>
+    <text x="48" y="62" fill="#ffffff" font-family="Manrope, Arial, sans-serif" font-size="24" font-weight="800">STAINLESS MILLS</text>
+    <g font-family="Manrope, Arial, sans-serif" font-size="25" font-weight="800" fill="#13243a">
+      <text x="48" y="132">TSINGSHAN 青山控股</text>
+      <text x="48" y="190">TISCO 太钢不锈</text>
+      <text x="48" y="248">JISCO 酒钢宏兴</text>
+      <text x="48" y="306">YONGJIN 甬金股份</text>
+      <text x="48" y="364">BAOXIN 宝钢德盛</text>
+      <text x="48" y="422">DELONG 德龙镍业</text>
+    </g>
+  </g>
+  <g transform="translate(70 746)">
+    <text x="0" y="0" fill="#c6d2df" font-family="Manrope, Arial, sans-serif" font-size="18">Names are presented as a cooperation reference board for supply-chain communication, not as official trademark artwork.</text>
+  </g>
+</svg>
