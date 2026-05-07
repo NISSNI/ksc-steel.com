@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+Sitemap: https://ksc-steel.com/sitemap.xml
