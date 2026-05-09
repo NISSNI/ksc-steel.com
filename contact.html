@@ -174,14 +174,52 @@
 <script>
 function handleSubmit(e) {
   e.preventDefault();
-  const btn = e.target.querySelector('.form-submit');
-  btn.textContent = T('contactPage', 'sent');
-  btn.style.background = '#27ae60';
-  setTimeout(() => {
-    btn.textContent = T('contactPage', 'submit');
-    btn.style.background = '';
-    e.target.reset();
-  }, 3000);
+  const form = e.target;
+  const btn = form.querySelector('.form-submit');
+  const originalText = btn.textContent;
+  
+  btn.textContent = '发送中...';
+  btn.disabled = true;
+
+  const data = {
+    name: form.querySelector('input[placeholder="您的姓名"]').value,
+    email: form.querySelector('input[type="email"]').value,
+    company: form.querySelector('input[placeholder="公司名称"]').value,
+    product: form.querySelector('input[placeholder="咨询产品（如：特钢/铝材/不锈钢）"]').value,
+    message: form.querySelector('textarea').value
+  };
+
+  fetch('https://formspree.io/f/xrejyadv', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+    body: JSON.stringify(data)
+  })
+  .then(res => res.json())
+  .then(result => {
+    if (result.ok) {
+      btn.textContent = T('contactPage', 'sent');
+      btn.style.background = '#27ae60';
+      form.reset();
+    } else {
+      btn.textContent = '发送失败';
+      btn.style.background = '#e74c3c';
+    }
+    setTimeout(() => {
+      btn.textContent = originalText;
+      btn.style.background = '';
+      btn.disabled = false;
+    }, 3000);
+  })
+  .catch(err => {
+    btn.textContent = '发送失败';
+    btn.style.background = '#e74c3c';
+    console.error(err);
+    setTimeout(() => {
+      btn.textContent = originalText;
+      btn.style.background = '';
+      btn.disabled = false;
+    }, 3000);
+  });
 }
 </script>
 </body>
