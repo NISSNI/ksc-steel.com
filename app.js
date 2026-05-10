@@ -244,10 +244,17 @@ const L = {
     email: { zh:'邮箱', en:'Email', th:'อีเมล', vi:'Email' },
     wechat: { zh:'微信联系', en:'Contact via WeChat', th:'ติดต่อผ่าน WeChat', vi:'Lien he qua WeChat' },
     wechat_desc: { zh:'扫码识别，备注"询价"更快响应', en:'Scan the QR code and note \"inquiry\" for a faster reply.', th:'สแกนคิวอาร์และพิมพ์ว่า \"inquiry\" เพื่อให้ตอบกลับได้เร็วขึ้น', vi:'Quet ma QR va ghi chu \"inquiry\" de duoc phan hoi nhanh hon.' },
+    whatsapp: { zh:'WhatsApp 联系', en:'Contact via WhatsApp', th:'ติดต่อผ่าน WhatsApp', vi:'Lien he qua WhatsApp' },
+    whatsapp_desc: { zh:'使用 WhatsApp 扫码添加胡健，适合海外客户快速沟通询价。', en:'Scan with WhatsApp to add Hu Jian for fast overseas inquiries.', th:'สแกนด้วย WhatsApp เพื่อเพิ่ม Hu Jian เหมาะสำหรับลูกค้าต่างประเทศที่ต้องการสอบถามรวดเร็ว', vi:'Quet bang WhatsApp de them Hu Jian, phu hop cho khach hang nuoc ngoai hoi gia nhanh.' },
     placeholder_name: { zh:'您的姓名', en:'Your Name', th:'ชื่อของคุณ', vi:'Ten cua ban' },
     placeholder_email: { zh:'您的邮箱', en:'Your Email', th:'อีเมลของคุณ', vi:'Email cua ban' },
     placeholder_company: { zh:'公司名称', en:'Company Name', th:'ชื่อบริษัท', vi:'Ten cong ty' },
     placeholder_product: { zh:'咨询产品（如：特钢/铝材/不锈钢）', en:'Product Interest (e.g. Special Steel / Aluminum / Stainless Steel)', th:'สินค้าที่สนใจ (เช่น เหล็กพิเศษ / อะลูมิเนียม / สแตนเลส)', vi:'San pham quan tam (vi du: Thep dac biet / Nhom / Thep khong gi)' },
+    placeholder_grade: { zh:'材料牌号（如：S45C / AL6061 / SUS301）', en:'Material Grade (e.g. S45C / AL6061 / SUS301)', th:'เกรดวัสดุ (เช่น S45C / AL6061 / SUS301)', vi:'Mac vat lieu (vi du: S45C / AL6061 / SUS301)' },
+    placeholder_spec: { zh:'厚度 / 宽度 / 长度 / 公差', en:'Thickness / Width / Length / Tolerance', th:'ความหนา / ความกว้าง / ความยาว / พิกัด', vi:'Do day / Rong / Dai / Dung sai' },
+    placeholder_quantity: { zh:'数量 / 月用量 / 年用量', en:'Quantity / Monthly Volume / Annual Volume', th:'จำนวน / ปริมาณต่อเดือน / ปริมาณต่อปี', vi:'So luong / San luong thang / San luong nam' },
+    placeholder_process: { zh:'加工方式（分条 / 剪板 / 冷轧 / 退火）', en:'Processing (Slitting / Shearing / Cold Rolling / Annealing)', th:'วิธีแปรรูป (ตัดแถบ / ตัดแผ่น / รีดเย็น / อบอ่อน)', vi:'Gia cong (Xe bang / Cat tam / Can lanh / U)' },
+    placeholder_application: { zh:'应用场景（齿轮 / 弹片 / 电池壳 / 电机铁芯）', en:'Application (Gear / Spring / Battery Case / Motor Core)', th:'การใช้งาน (เฟือง / สปริง / กล่องแบตเตอรี่ / แกนมอเตอร์)', vi:'Ung dung (Banh rang / La dan hoi / Vo pin / Loi dong co)' },
     placeholder_message: { zh:'请输入您的留言...', en:'Please enter your message...', th:'กรุณากรอกข้อความของคุณ...', vi:'Vui long nhap loi nhan cua ban...' },
     submit: { zh:'发送留言', en:'Send Message', th:'ส่งข้อความ', vi:'Gui tin nhan' },
     sent: { zh:'已发送 ✓', en:'Sent ✓', th:'ส่งแล้ว ✓', vi:'Da gui ✓' },
@@ -356,13 +363,13 @@ const L = {
   },
   seo: {
     home_title: {
-      zh:'特钢_铝合金_矽钢片源头供应商_高顺昌KSC | 厂家直供25年',
+      zh:'S45C_42CrMo4_AL6061_SUS301_矽钢片供应商_高顺昌KSC',
       en:'Special Steel, Aluminum & Silicon Steel Supplier | KSC',
       th:'ผู้จัดหาเหล็กพิเศษ อะลูมิเนียม และเหล็กซิลิคอน | KSC',
       vi:'Nha cung cap thep dac biet, nhom va thep silicon | KSC'
     },
     home_desc: {
-      zh:'高顺昌KSC专业供应特钢、铝合金、矽钢片、不锈钢、铜材，25年源头厂家，中国、越南、泰国五大生产基地，提供分条、剪板、冷轧、退火加工服务。',
+      zh:'高顺昌KSC专业供应S45C、42CrMo4、65Mn、AL6061、AL5052、SUS301、SUS304、B20AT、50W290、C52100等特钢、铝材、不锈钢、矽钢片与铜材，支持分条、剪板、冷轧、退火加工。',
       en:'KSC supplies special steel, aluminum, silicon steel, stainless steel and copper with slitting, shearing, cold rolling and annealing across China, Vietnam and Thailand.',
       th:'KSC จัดหาเหล็กพิเศษ อะลูมิเนียม เหล็กซิลิคอน สแตนเลส และทองแดง พร้อมบริการตัด รีดเย็น และอบอ่อนในจีน เวียดนาม และไทย',
       vi:'KSC cung cap thep dac biet, nhom, thep silicon, thep khong gi va dong, cung dich vu xe bang, cat tam, can lanh va u tai Trung Quoc, Viet Nam va Thai Lan.'
@@ -380,25 +387,25 @@ const L = {
       vi:'Tim hieu lich su KSC, mang luoi nha may, khach hang va nang luc gia cong kim loai cho o to, dien tu, kim khi chinh xac va cong nghiep.'
     },
     products_title: {
-      zh:'特钢板材_铝合金6061_矽钢片_产品中心_高顺昌KSC',
+      zh:'S45C_42CrMo4_65Mn_AL6061_SUS301_B20AT_产品中心_KSC',
       en:'Products | Special Steel, 6061 Aluminum, Silicon Steel | KSC',
       th:'ผลิตภัณฑ์ | เหล็กพิเศษ อะลูมิเนียม 6061 เหล็กซิลิคอน | KSC',
       vi:'San pham | Thep dac biet, nhom 6061, thep silicon | KSC'
     },
     products_desc: {
-      zh:'高顺昌KSC产品中心覆盖特钢、铝合金、矽钢片、不锈钢、热轧冷轧卷和铜材，支持来图定制切割加工与稳定批量供应。',
+      zh:'高顺昌KSC产品中心覆盖S35C、S45C、SK85、42CrMo4、16MnCr5、AL6061、AL7075、SUS301、SUS304、SUS316、B20AT、50W290、C52100等型号，支持来图定制切割加工与稳定批量供应。',
       en:'KSC products include special steel, aluminum alloy, silicon steel, stainless steel, hot/cold rolled coils and copper, with custom cutting and stable bulk supply.',
       th:'ผลิตภัณฑ์ KSC ครอบคลุมเหล็กพิเศษ อะลูมิเนียม เหล็กซิลิคอน สแตนเลส เหล็กม้วน และทองแดง พร้อมบริการตัดตามแบบ',
       vi:'San pham KSC gom thep dac biet, hop kim nhom, thep silicon, thep khong gi, cuon can nong/can nguoi va dong, ho tro cat theo ban ve.'
     },
     applications_title: {
-      zh:'材料应用与零件案例 | 汽车电子精密零件 | 高顺昌KSC',
+      zh:'S45C_AL6061_SUS301_B20AT材料应用案例_高顺昌KSC',
       en:'Material Applications & Part Cases | Automotive & Electronics | KSC',
       th:'การใช้งานวัสดุและชิ้นส่วน | ยานยนต์และอิเล็กทรอนิกส์ | KSC',
       vi:'Ung dung vat lieu va linh kien | O to va dien tu | KSC'
     },
     applications_desc: {
-      zh:'高顺昌KSC展示特钢、矽钢片、铝材、不锈钢、铜材在汽车零件、电子零件、电机铁芯和精密五金中的应用与选材原因。',
+      zh:'高顺昌KSC展示S45C、42CrMo4、AL6061、AL5052、SUS301、SUS304、B20AT、50W290等材料在汽车零件、电子零件、电机铁芯和精密五金中的应用与选材原因。',
       en:'KSC explains how special steel, silicon steel, aluminum, stainless steel and copper are used in automotive, electronics, motor cores and precision parts.',
       th:'KSC อธิบายการใช้เหล็กพิเศษ เหล็กซิลิคอน อะลูมิเนียม สแตนเลส และทองแดงในยานยนต์ อิเล็กทรอนิกส์ และชิ้นส่วนแม่นยำ',
       vi:'KSC giai thich ung dung thep dac biet, thep silicon, nhom, inox va dong trong o to, dien tu, loi dong co va linh kien chinh xac.'
@@ -450,6 +457,18 @@ const L = {
       en:'Contact KSC for special steel, silicon steel, aluminum, stainless steel, copper and processing service inquiries across China, Vietnam and Thailand.',
       th:'ติดต่อ KSC เพื่อสอบถามเหล็กพิเศษ เหล็กซิลิคอน อะลูมิเนียม สแตนเลส ทองแดง และบริการแปรรูปในจีน เวียดนาม และไทย',
       vi:'Lien he KSC de hoi ve thep dac biet, thep silicon, nhom, thep khong gi, dong va dich vu gia cong tai Trung Quoc, Viet Nam va Thai Lan.'
+    },
+    materials_title: {
+      zh:'S45C_20CrMnTiH_AL6061_SUS304_B20AT_材料及应用_KSC',
+      en:'Materials & Applications | Steel, Aluminum, Stainless, Silicon Steel | KSC',
+      th:'วัสดุและการใช้งาน | เหล็ก อะลูมิเนียม สแตนเลส เหล็กซิลิคอน | KSC',
+      vi:'Vat lieu va ung dung | Thep, nhom, inox, thep silicon | KSC'
+    },
+    materials_desc: {
+      zh:'KSC材料及应用页覆盖S45C、42CrMo4、20CrMnTiH、AL6061-T6、AL5052、SUS301、SUS304、B20AT、50W290、C52100等常用产品型号，适用于汽车冲压件、新能源电驱、电子散热与精密零件。',
+      en:'KSC materials page covers common grades for automotive, electronics, motor and precision parts applications.',
+      th:'หน้าวัสดุของ KSC ครอบคลุมเกรดยอดนิยมสำหรับยานยนต์ อิเล็กทรอนิกส์ มอเตอร์ และชิ้นส่วนแม่นยำ',
+      vi:'Trang vat lieu KSC bao gom cac mac pho bien cho o to, dien tu, dong co va linh kien chinh xac.'
     }
   },
   processTable: {
@@ -462,6 +481,20 @@ const L = {
 };
 
 let currentLang = 'zh';
+
+const SITE_URL = 'https://ksc-steel.com';
+const DEFAULT_OG_IMAGE = `${SITE_URL}/images/cover.jpeg`;
+const PAGE_PATHS = {
+  home: '/',
+  about: '/about.html',
+  products: '/products.html',
+  applications: '/applications.html',
+  processing: '/processing.html',
+  quality: '/quality.html',
+  factory: '/factory.html',
+  contact: '/contact.html',
+  materials: '/materials.html',
+};
 
 const LANG_CONFIG = {
   zh: { flag: '🇨🇳', label: '中文' },
@@ -481,6 +514,97 @@ function T(section, key) {
   return v[currentLang] || v['en'] || key;
 }
 
+function getCurrentPage() {
+  const explicit = document.body?.dataset.page;
+  if (explicit) return explicit;
+  const pathname = window.location.pathname || '/';
+  if (pathname === '/' || pathname.endsWith('/index.html')) return 'home';
+  const file = pathname.split('/').pop()?.replace('.html', '') || 'home';
+  return PAGE_PATHS[file] ? file : file;
+}
+
+function ensureNamedMeta(name) {
+  let meta = document.querySelector(`meta[name="${name}"]`);
+  if (!meta) {
+    meta = document.createElement('meta');
+    meta.setAttribute('name', name);
+    document.head.appendChild(meta);
+  }
+  return meta;
+}
+
+function ensurePropertyMeta(property) {
+  let meta = document.querySelector(`meta[property="${property}"]`);
+  if (!meta) {
+    meta = document.createElement('meta');
+    meta.setAttribute('property', property);
+    document.head.appendChild(meta);
+  }
+  return meta;
+}
+
+function ensureCanonical(href) {
+  let link = document.querySelector('link[rel="canonical"]');
+  if (!link) {
+    link = document.createElement('link');
+    link.setAttribute('rel', 'canonical');
+    document.head.appendChild(link);
+  }
+  link.setAttribute('href', href);
+}
+
+function setStructuredData(page, title, description, pageUrl) {
+  const type = page === 'products' || page === 'materials' || page === 'applications' ? 'CollectionPage' : 'WebPage';
+  const payload = {
+    '@context': 'https://schema.org',
+    '@graph': [
+      {
+        '@type': 'Organization',
+        '@id': `${SITE_URL}#organization`,
+        name: '高顺昌控股有限公司 KSC',
+        alternateName: 'Kao Shun Cheong Holdings Co., Ltd.',
+        url: SITE_URL,
+        logo: `${SITE_URL}/images/ksc-logo-red.jpeg`,
+        email: 'mailto:hujian@kscsteel.net',
+        contactPoint: [
+          {
+            '@type': 'ContactPoint',
+            contactType: 'sales',
+            email: 'hujian@kscsteel.net',
+            availableLanguage: ['zh-CN', 'en', 'th', 'vi']
+          }
+        ]
+      },
+      {
+        '@type': 'WebSite',
+        '@id': `${SITE_URL}#website`,
+        url: SITE_URL,
+        name: '高顺昌 KSC',
+        publisher: { '@id': `${SITE_URL}#organization` }
+      },
+      {
+        '@type': type,
+        '@id': `${pageUrl}#webpage`,
+        url: pageUrl,
+        name: title,
+        description,
+        isPartOf: { '@id': `${SITE_URL}#website` },
+        about: { '@id': `${SITE_URL}#organization` },
+        inLanguage: currentLang
+      }
+    ]
+  };
+
+  let script = document.getElementById('ksc-structured-data');
+  if (!script) {
+    script = document.createElement('script');
+    script.type = 'application/ld+json';
+    script.id = 'ksc-structured-data';
+    document.head.appendChild(script);
+  }
+  script.textContent = JSON.stringify(payload);
+}
+
 function applyTranslations() {
   document.querySelectorAll('[data-i18n]').forEach(el => {
     const section = el.dataset.i18n;
@@ -497,19 +621,30 @@ function applyTranslations() {
   // HTML lang
   document.documentElement.lang = currentLang;
 
-  const page = document.body?.dataset.page || 'home';
+  const page = getCurrentPage();
   const title = T('seo', `${page}_title`);
   const description = T('seo', `${page}_desc`);
   if (title && !title.endsWith('_title')) document.title = title;
-  let metaDescription = document.querySelector('meta[name="description"]');
-  if (!metaDescription) {
-    metaDescription = document.createElement('meta');
-    metaDescription.setAttribute('name', 'description');
-    document.head.appendChild(metaDescription);
-  }
+  const metaDescription = ensureNamedMeta('description');
   if (description && !description.endsWith('_desc')) {
     metaDescription.setAttribute('content', description);
   }
+
+  const pagePath = PAGE_PATHS[page] || '/';
+  const pageUrl = `${SITE_URL}${pagePath}`;
+  ensureCanonical(pageUrl);
+  ensureNamedMeta('robots').setAttribute('content', 'index,follow');
+  ensurePropertyMeta('og:type').setAttribute('content', page === 'home' ? 'website' : 'article');
+  ensurePropertyMeta('og:site_name').setAttribute('content', '高顺昌 KSC');
+  ensurePropertyMeta('og:title').setAttribute('content', document.title);
+  ensurePropertyMeta('og:description').setAttribute('content', metaDescription.getAttribute('content') || '');
+  ensurePropertyMeta('og:url').setAttribute('content', pageUrl);
+  ensurePropertyMeta('og:image').setAttribute('content', DEFAULT_OG_IMAGE);
+  ensureNamedMeta('twitter:card').setAttribute('content', 'summary_large_image');
+  ensureNamedMeta('twitter:title').setAttribute('content', document.title);
+  ensureNamedMeta('twitter:description').setAttribute('content', metaDescription.getAttribute('content') || '');
+  ensureNamedMeta('twitter:image').setAttribute('content', DEFAULT_OG_IMAGE);
+  setStructuredData(page, document.title, metaDescription.getAttribute('content') || '', pageUrl);
 
   const selectEl = document.querySelector('.lang-select');
   if (selectEl) selectEl.value = currentLang;

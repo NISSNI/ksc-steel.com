@@ -5,6 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>联系我们 — 高顺昌 KSC</title>
   <meta name="description" content="联系高顺昌KSC销售代表，咨询特钢、矽钢片、铝材、不锈钢、铜材及分条剪板加工服务，支持中国、越南、泰国客户。">
+  <link rel="canonical" href="https://ksc-steel.com/contact.html">
+  <meta name="robots" content="index,follow">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="高顺昌 KSC">
+  <meta property="og:title" content="联系我们 | 特钢铝材不锈钢询价 | 高顺昌KSC">
+  <meta property="og:description" content="联系高顺昌KSC销售代表，咨询特钢、矽钢片、铝材、不锈钢、铜材及分条剪板加工服务，支持中国、越南、泰国客户。">
+  <meta property="og:url" content="https://ksc-steel.com/contact.html">
+  <meta property="og:image" content="https://ksc-steel.com/images/cover.jpeg">
+  <meta name="twitter:card" content="summary_large_image">
   <link rel="stylesheet" href="styles.css?v=20260507k">
 </head>
 <body data-page="contact">
@@ -137,26 +146,45 @@
       <div class="wechat-section" style="margin-top:24px">
         <div class="wechat-title">📱 <span data-i18n="contactPage" data-i18n-key="wechat">微信联系</span></div>
         <img src="images/wechat-qrcode.jpeg" alt="微信二维码" class="wechat-qr">
-        <p class="wechat-desc" data-i18n="contactPage" data-i18n-key="wechat_desc">扫码识别，备注"询价"更快响应</p>
+      </div>
+
+      <div class="wechat-section" style="margin-top:18px">
+        <div class="wechat-title">💬 <span data-i18n="contactPage" data-i18n-key="whatsapp">WhatsApp 联系</span></div>
+        <img src="images/whatsapp-qrcode-square.jpeg" alt="WhatsApp二维码" class="wechat-qr">
       </div>
     </div>
 
     <div>
       <form class="contact-form" onsubmit="handleSubmit(event)">
         <div class="form-group">
-          <input type="text" data-i18n-placeholder="contactPage" data-i18n-key="placeholder_name" placeholder="您的姓名" required>
+          <input type="text" name="name" data-i18n-placeholder="contactPage" data-i18n-key="placeholder_name" placeholder="您的姓名" required>
         </div>
         <div class="form-group">
-          <input type="email" data-i18n-placeholder="contactPage" data-i18n-key="placeholder_email" placeholder="您的邮箱" required>
+          <input type="email" name="email" data-i18n-placeholder="contactPage" data-i18n-key="placeholder_email" placeholder="您的邮箱" required>
         </div>
         <div class="form-group">
-          <input type="text" data-i18n-placeholder="contactPage" data-i18n-key="placeholder_company" placeholder="公司名称">
+          <input type="text" name="company" data-i18n-placeholder="contactPage" data-i18n-key="placeholder_company" placeholder="公司名称">
         </div>
         <div class="form-group">
-          <input type="text" data-i18n-placeholder="contactPage" data-i18n-key="placeholder_product" placeholder="咨询产品（如：特钢/铝材/不锈钢）">
+          <input type="text" name="product" data-i18n-placeholder="contactPage" data-i18n-key="placeholder_product" placeholder="咨询产品（如：特钢/铝材/不锈钢）">
         </div>
         <div class="form-group">
-          <textarea data-i18n-placeholder="contactPage" data-i18n-key="placeholder_message" placeholder="请输入您的留言..."></textarea>
+          <input type="text" name="grade" data-i18n-placeholder="contactPage" data-i18n-key="placeholder_grade" placeholder="材料牌号（如：S45C / AL6061 / SUS301）">
+        </div>
+        <div class="form-group">
+          <input type="text" name="spec" data-i18n-placeholder="contactPage" data-i18n-key="placeholder_spec" placeholder="厚度 / 宽度 / 长度 / 公差">
+        </div>
+        <div class="form-group">
+          <input type="text" name="quantity" data-i18n-placeholder="contactPage" data-i18n-key="placeholder_quantity" placeholder="数量 / 月用量 / 年用量">
+        </div>
+        <div class="form-group">
+          <input type="text" name="process" data-i18n-placeholder="contactPage" data-i18n-key="placeholder_process" placeholder="加工方式（分条 / 剪板 / 冷轧 / 退火）">
+        </div>
+        <div class="form-group">
+          <input type="text" name="application" data-i18n-placeholder="contactPage" data-i18n-key="placeholder_application" placeholder="应用场景（齿轮 / 弹片 / 电池壳 / 电机铁芯）">
+        </div>
+        <div class="form-group">
+          <textarea name="message" data-i18n-placeholder="contactPage" data-i18n-key="placeholder_message" placeholder="请输入您的留言..."></textarea>
         </div>
         <button type="submit" class="form-submit" data-i18n="contactPage" data-i18n-key="submit">发送留言</button>
       </form>
@@ -182,11 +210,16 @@ function handleSubmit(e) {
   btn.disabled = true;
 
   const data = {
-    name: form.querySelector('input[placeholder="您的姓名"]').value,
-    email: form.querySelector('input[type="email"]').value,
-    company: form.querySelector('input[placeholder="公司名称"]').value,
-    product: form.querySelector('input[placeholder="咨询产品（如：特钢/铝材/不锈钢）"]').value,
-    message: form.querySelector('textarea').value
+    name: form.querySelector('[name="name"]').value,
+    email: form.querySelector('[name="email"]').value,
+    company: form.querySelector('[name="company"]').value,
+    product: form.querySelector('[name="product"]').value,
+    grade: form.querySelector('[name="grade"]').value,
+    spec: form.querySelector('[name="spec"]').value,
+    quantity: form.querySelector('[name="quantity"]').value,
+    process: form.querySelector('[name="process"]').value,
+    application: form.querySelector('[name="application"]').value,
+    message: form.querySelector('[name="message"]').value
   };
 
   fetch('https://formspree.io/f/xrejyadv', {
