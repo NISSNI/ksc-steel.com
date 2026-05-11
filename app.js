@@ -481,6 +481,32 @@ const L = {
 };
 
 let currentLang = 'zh';
+const prefersReducedMotion = window.matchMedia
+  ? window.matchMedia('(prefers-reduced-motion: reduce)')
+  : { matches: false };
+const AUTO_REVEAL_SELECTORS = [
+  '.page-header-content',
+  '.section-title',
+  '.info-panel',
+  '.metric-chip',
+  '.cert-badge',
+  '.customer-frame',
+  '.table-shell',
+  '.materials-table-wrap',
+  '.factory-card',
+  '.contact-item',
+  '.contact-form',
+  '.wechat-section',
+  '.selector-card',
+  '.process-pills',
+  '.quote-step',
+  '.capability-card',
+  '.quality-card',
+  '.application-card',
+  '.scenario-panel',
+  '.partner-board',
+  '.mini-card',
+];
 
 const SITE_URL = 'https://ksc-steel.com';
 const DEFAULT_OG_IMAGE = `${SITE_URL}/images/cover.jpeg`;
@@ -710,17 +736,53 @@ function initNav() {
   });
 }
 
+function initMotionTargets() {
+  AUTO_REVEAL_SELECTORS.forEach((selector) => {
+    document.querySelectorAll(selector).forEach((element) => {
+      if (!element.classList.contains('reveal')) {
+        element.classList.add('reveal');
+      }
+    });
+  });
+
+  document.querySelectorAll('.page-header').forEach((header) => {
+    header.classList.add('page-header-animated');
+  });
+
+  document.querySelectorAll('.metric-chip strong').forEach((item) => {
+    if (item.dataset.countup) return;
+    const text = (item.textContent || '').trim();
+    const match = text.match(/^(\d+)(\+)?$/);
+    if (!match) return;
+    item.classList.add('countup');
+    item.dataset.countup = match[1];
+    if (match[2]) item.dataset.countupSuffix = match[2];
+  });
+}
+
 function initReveal() {
   const items = document.querySelectorAll('.reveal');
   if (!items.length || !('IntersectionObserver' in window)) {
     items.forEach(item => item.classList.add('visible'));
+    initCountups();
     return;
   }
+
+  items.forEach((item) => {
+    const group = item.parentElement;
+    if (!group) return;
+    const peers = Array.from(group.children).filter((child) => child.classList?.contains('reveal'));
+    const index = peers.indexOf(item);
+    if (index > -1 && !item.style.getPropertyValue('--reveal-delay')) {
+      item.style.setProperty('--reveal-delay', `${Math.min(index, 6) * 70}ms`);
+    }
+  });
 
   const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
       if (!entry.isIntersecting) return;
       entry.target.classList.add('visible');
+      animateCountups(entry.target);
       observer.unobserve(entry.target);
     });
   }, { threshold: 0.16 });
@@ -728,8 +790,113 @@ function initReveal() {
   items.forEach(item => observer.observe(item));
 }
 
+function formatCount(value, suffix = '') {
+  return `${Math.round(value)}${suffix}`;
+}
+
+function animateCountups(scope = document) {
+  const items = scope.querySelectorAll ? scope.querySelectorAll('.countup[data-countup]') : [];
+  items.forEach((item) => {
+    if (item.dataset.counted === 'true') return;
+
+    const target = Number(item.dataset.countup);
+    if (!Number.isFinite(target)) return;
+
+    const suffix = item.dataset.countupSuffix || '';
+    if (prefersReducedMotion.matches) {
+      item.textContent = formatCount(target, suffix);
+      item.dataset.counted = 'true';
+      return;
+    }
+
+    const duration = 1200;
+    const start = performance.now();
+
+    const tick = (now) => {
+      const progress = Math.min((now - start) / duration, 1);
+      const eased = 1 - Math.pow(1 - progress, 3);
+      item.textContent = formatCount(target * eased, suffix);
+      if (progress < 1) {
+        window.requestAnimationFrame(tick);
+        return;
+      }
+      item.textContent = formatCount(target, suffix);
+      item.dataset.counted = 'true';
+    };
+
+    window.requestAnimationFrame(tick);
+  });
+}
+
+function initCountups() {
+  animateCountups(document);
+}
+
+function initHeroMotion() {
+  const hero = document.querySelector('.hero');
+  if (!hero || prefersReducedMotion.matches) return;
+
+  let ticking = false;
+
+  const syncHeroMotion = () => {
+    const rect = hero.getBoundingClientRect();
+    const viewportHeight = window.innerHeight || 1;
+    const progress = Math.max(0, Math.min(1, (viewportHeight - rect.top) / (rect.height + viewportHeight * 0.35)));
+    const shift = Math.min(window.scrollY * 0.08, 36);
+    const panelShift = Math.min(window.scrollY * 0.03, 18);
+
+    document.documentElement.style.setProperty('--hero-progress', progress.toFixed(3));
+    document.documentElement.style.setProperty('--hero-shift', `${shift.toFixed(2)}px`);
+    document.documentElement.style.setProperty('--hero-panel-shift', `${panelShift.toFixed(2)}px`);
+    ticking = false;
+  };
+
+  const onScroll = () => {
+    if (ticking) return;
+    ticking = true;
+    window.requestAnimationFrame(syncHeroMotion);
+  };
+
+  syncHeroMotion();
+  window.addEventListener('scroll', onScroll, { passive: true });
+  window.addEventListener('resize', onScroll);
+}
+
+function initPageHeaderMotion() {
+  const headers = document.querySelectorAll('.page-header');
+  if (!headers.length || prefersReducedMotion.matches) return;
+
+  let ticking = false;
+
+  const syncHeaders = () => {
+    const viewportHeight = window.innerHeight || 1;
+    headers.forEach((header) => {
+      const rect = header.getBoundingClientRect();
+      const progress = Math.max(0, Math.min(1, (viewportHeight - rect.top) / (rect.height + viewportHeight * 0.45)));
+      const shift = Math.max(-16, Math.min(20, (viewportHeight / 2 - rect.top) * 0.035));
+      header.style.setProperty('--page-hero-progress', progress.toFixed(3));
+      header.style.setProperty('--page-hero-shift', `${shift.toFixed(2)}px`);
+    });
+    ticking = false;
+  };
+
+  const onScroll = () => {
+    if (ticking) return;
+    ticking = true;
+    window.requestAnimationFrame(syncHeaders);
+  };
+
+  syncHeaders();
+  window.addEventListener('scroll', onScroll, { passive: true });
+  window.addEventListener('resize', onScroll);
+}
+
 document.addEventListener('DOMContentLoaded', () => {
+  document.body.classList.add('js-ready');
   initLang();
   initNav();
+  initMotionTargets();
   initReveal();
+  initHeroMotion();
+  initPageHeaderMotion();
 });
