@@ -242,6 +242,7 @@ const L = {
     sales: { zh:'销售代表', en:'Sales Representative', th:'ผู้แทนฝ่ายขาย', vi:'Dai dien kinh doanh' },
     name: { zh:'姓名', en:'Name', th:'ชื่อ', vi:'Ten' },
     email: { zh:'邮箱', en:'Email', th:'อีเมล', vi:'Email' },
+    phone: { zh:'手机', en:'Mobile', th:'โทรศัพท์มือถือ', vi:'Điện thoại di động' },
     wechat: { zh:'微信联系', en:'Contact via WeChat', th:'ติดต่อผ่าน WeChat', vi:'Lien he qua WeChat' },
     wechat_desc: { zh:'扫码识别，备注"询价"更快响应', en:'Scan the QR code and note \"inquiry\" for a faster reply.', th:'สแกนคิวอาร์และพิมพ์ว่า \"inquiry\" เพื่อให้ตอบกลับได้เร็วขึ้น', vi:'Quet ma QR va ghi chu \"inquiry\" de duoc phan hoi nhanh hon.' },
     whatsapp: { zh:'WhatsApp 联系', en:'Contact via WhatsApp', th:'ติดต่อผ่าน WhatsApp', vi:'Lien he qua WhatsApp' },
